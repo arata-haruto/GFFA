@@ -1,0 +1,14 @@
+C:\PG\2025\GFF_Arata\GFF_Arata\AppMain.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\AppMain.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Objects\Item.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\Item.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Objects\Floor.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\Floor.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Objects\Player.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\Player.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Scene\GameMain.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\GameMain.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Scene\InGame\InGameScene.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\InGameScene.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Scene\SceneManager.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\SceneManager.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Scene\Title\TitleScene.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\TitleScene.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Utility\Application.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\Application.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Utility\Collision.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\Collision.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Utility\InputManager.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\InputManager.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Utility\ProjectConfig.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\ProjectConfig.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Utility\ResourceManager.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\ResourceManager.obj
+C:\PG\2025\GFF_Arata\GFF_Arata\Utility\Vector2D.cpp;C:\PG\2025\GFF_Arata\GFF_Arata\GFF_Arata\x64\Debug\Vector2D.obj

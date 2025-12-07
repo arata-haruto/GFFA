@@ -1,0 +1,731 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ItemManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ItemManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ItemManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ItemManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\InGame\\InGameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\InGame\\InGameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\InGame\\InGameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\InGame\\InGameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\NPC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\NPC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\NPCManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\NPCManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\NPCManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\NPCManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Suspect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\Suspect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Suspect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\Suspect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\NPC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\NPC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\InGame\\MapData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\InGame\\MapData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ReasoningManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ChoiceEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ChoiceEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Collision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\Collision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ChoiceEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ChoiceEffect.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ReasoningUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ReasoningManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningUI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ReasoningUI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Floor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\Floor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\Title\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\Title\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\Title\\TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\Title\\TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\SceneManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\SceneManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\SceneFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\SceneBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\GameMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Scene\\GameMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Floor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\Floor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\singleton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\singleton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\AppMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:AppMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Vector2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\Vector2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Vector2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\Vector2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ProjectConfig.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ProjectConfig.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ProjectConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ProjectConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\InputManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\InputManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Collision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\Collision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InGameScene.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\InGame\\InGameScene.cpp",
+              "RelativeDocumentMoniker": "Scene\\InGame\\InGameScene.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\InGame\\InGameScene.cpp",
+              "RelativeToolTip": "Scene\\InGame\\InGameScene.cpp",
+              "ViewState": "AgIAAPsBAAAAAAAAAAAgwAsCAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-27T02:50:41.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReasoningManager.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningManager.cpp",
+              "RelativeDocumentMoniker": "Utility\\ReasoningManager.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningManager.cpp",
+              "RelativeToolTip": "Utility\\ReasoningManager.cpp",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAAwAUBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-25T05:35:30.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ResourceManager.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ResourceManager.h",
+              "RelativeDocumentMoniker": "Utility\\ResourceManager.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ResourceManager.h",
+              "RelativeToolTip": "Utility\\ResourceManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:34:45.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InGameScene.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\InGame\\InGameScene.h",
+              "RelativeDocumentMoniker": "Scene\\InGame\\InGameScene.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\InGame\\InGameScene.h",
+              "RelativeToolTip": "Scene\\InGame\\InGameScene.h",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwEAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-04T04:55:20.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Item.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Item.cpp",
+              "RelativeDocumentMoniker": "Objects\\Item.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Item.cpp",
+              "RelativeToolTip": "Objects\\Item.cpp",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAgwJsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:07:15.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ItemManager.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ItemManager.h",
+              "RelativeDocumentMoniker": "Utility\\ItemManager.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ItemManager.h",
+              "RelativeToolTip": "Utility\\ItemManager.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:00:29.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ItemManager.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ItemManager.cpp",
+              "RelativeDocumentMoniker": "Utility\\ItemManager.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ItemManager.cpp",
+              "RelativeToolTip": "Utility\\ItemManager.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-27T02:51:29.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NPC.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\NPC.cpp",
+              "RelativeDocumentMoniker": "Objects\\NPC.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\NPC.cpp",
+              "RelativeToolTip": "Objects\\NPC.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-06T02:09:36.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Item.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Item.h",
+              "RelativeDocumentMoniker": "Objects\\Item.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Item.h",
+              "RelativeToolTip": "Objects\\Item.h",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:07:16.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MapData.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\InGame\\MapData.h",
+              "RelativeDocumentMoniker": "Scene\\InGame\\MapData.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\InGame\\MapData.h",
+              "RelativeToolTip": "Scene\\InGame\\MapData.h",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAH8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-06T01:48:50.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NPCManager.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\NPCManager.cpp",
+              "RelativeDocumentMoniker": "Utility\\NPCManager.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\NPCManager.cpp",
+              "RelativeToolTip": "Utility\\NPCManager.cpp",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAgwMkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-06T02:11:14.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NPC.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\NPC.h",
+              "RelativeDocumentMoniker": "Objects\\NPC.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\NPC.h",
+              "RelativeToolTip": "Objects\\NPC.h",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwEQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-06T02:09:07.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Suspect.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Suspect.h",
+              "RelativeDocumentMoniker": "Objects\\Suspect.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Suspect.h",
+              "RelativeToolTip": "Objects\\Suspect.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-06T02:10:06.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Suspect.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Suspect.cpp",
+              "RelativeDocumentMoniker": "Objects\\Suspect.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Suspect.cpp",
+              "RelativeToolTip": "Objects\\Suspect.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-06T02:10:20.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NPCManager.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\NPCManager.h",
+              "RelativeDocumentMoniker": "Utility\\NPCManager.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\NPCManager.h",
+              "RelativeToolTip": "Utility\\NPCManager.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwCcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-06T02:10:42.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChoiceEffect.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ChoiceEffect.h",
+              "RelativeDocumentMoniker": "Utility\\ChoiceEffect.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ChoiceEffect.h",
+              "RelativeToolTip": "Utility\\ChoiceEffect.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T07:30:11.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Collision.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Collision.cpp",
+              "RelativeDocumentMoniker": "Utility\\Collision.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Collision.cpp",
+              "RelativeToolTip": "Utility\\Collision.cpp",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:12:54.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReasoningUI.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningUI.cpp",
+              "RelativeDocumentMoniker": "Utility\\ReasoningUI.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningUI.cpp",
+              "RelativeToolTip": "Utility\\ReasoningUI.cpp",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAgwGQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:14:43.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReasoningManager.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningManager.h",
+              "RelativeDocumentMoniker": "Utility\\ReasoningManager.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningManager.h",
+              "RelativeToolTip": "Utility\\ReasoningManager.h",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwFsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-26T05:06:56.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChoiceEffect.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ChoiceEffect.cpp",
+              "RelativeDocumentMoniker": "Utility\\ChoiceEffect.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ChoiceEffect.cpp",
+              "RelativeToolTip": "Utility\\ChoiceEffect.cpp",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAgwJgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T07:30:12.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ResourceManager.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ResourceManager.cpp",
+              "RelativeDocumentMoniker": "Utility\\ResourceManager.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ResourceManager.cpp",
+              "RelativeToolTip": "Utility\\ResourceManager.cpp",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAgwIYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:35:10.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ReasoningUI.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningUI.h",
+              "RelativeDocumentMoniker": "Utility\\ReasoningUI.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ReasoningUI.h",
+              "RelativeToolTip": "Utility\\ReasoningUI.h",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwCAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:14:45.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Floor.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Floor.cpp",
+              "RelativeDocumentMoniker": "Objects\\Floor.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Floor.cpp",
+              "RelativeToolTip": "Objects\\Floor.cpp",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:07:14.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Player.cpp",
+              "RelativeDocumentMoniker": "Objects\\Player.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Player.cpp",
+              "RelativeToolTip": "Objects\\Player.cpp",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwF4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:07:16.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Player.h",
+              "RelativeDocumentMoniker": "Objects\\Player.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Player.h",
+              "RelativeToolTip": "Objects\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:07:17.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Application.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Application.cpp",
+              "RelativeDocumentMoniker": "Utility\\Application.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Application.cpp",
+              "RelativeToolTip": "Utility\\Application.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvx4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-01T01:28:06.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TitleScene.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\Title\\TitleScene.h",
+              "RelativeDocumentMoniker": "Scene\\Title\\TitleScene.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\Title\\TitleScene.h",
+              "RelativeToolTip": "Scene\\Title\\TitleScene.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:58:24.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TitleScene.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\Title\\TitleScene.cpp",
+              "RelativeDocumentMoniker": "Scene\\Title\\TitleScene.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\Title\\TitleScene.cpp",
+              "RelativeToolTip": "Scene\\Title\\TitleScene.cpp",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAgwOYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:58:32.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SceneBase.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneBase.h",
+              "RelativeDocumentMoniker": "Scene\\SceneBase.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneBase.h",
+              "RelativeToolTip": "Scene\\SceneBase.h",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:58:45.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SceneFactory.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneFactory.h",
+              "RelativeDocumentMoniker": "Scene\\SceneFactory.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneFactory.h",
+              "RelativeToolTip": "Scene\\SceneFactory.h",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:59:42.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SceneManager.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneManager.h",
+              "RelativeDocumentMoniker": "Scene\\SceneManager.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneManager.h",
+              "RelativeToolTip": "Scene\\SceneManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:59:54.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SceneManager.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneManager.cpp",
+              "RelativeDocumentMoniker": "Scene\\SceneManager.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\SceneManager.cpp",
+              "RelativeToolTip": "Scene\\SceneManager.cpp",
+              "ViewState": "AgIAADkAAAAAAAAAAAAgwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T03:00:11.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Floor.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Floor.h",
+              "RelativeDocumentMoniker": "Objects\\Floor.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Objects\\Floor.h",
+              "RelativeToolTip": "Objects\\Floor.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:07:14.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "GameMain.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\GameMain.cpp",
+              "RelativeDocumentMoniker": "Scene\\GameMain.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Scene\\GameMain.cpp",
+              "RelativeToolTip": "Scene\\GameMain.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-01T01:31:10.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "singleton.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\singleton.h",
+              "RelativeDocumentMoniker": "Utility\\singleton.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\singleton.h",
+              "RelativeToolTip": "Utility\\singleton.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:35:26.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Vector2D.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Vector2D.cpp",
+              "RelativeDocumentMoniker": "Utility\\Vector2D.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Vector2D.cpp",
+              "RelativeToolTip": "Utility\\Vector2D.cpp",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAgwKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:35:56.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Vector2D.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Vector2D.h",
+              "RelativeDocumentMoniker": "Utility\\Vector2D.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Vector2D.h",
+              "RelativeToolTip": "Utility\\Vector2D.h",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAgwGcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:35:46.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ProjectConfig.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ProjectConfig.cpp",
+              "RelativeDocumentMoniker": "Utility\\ProjectConfig.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ProjectConfig.cpp",
+              "RelativeToolTip": "Utility\\ProjectConfig.cpp",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:14:06.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ProjectConfig.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ProjectConfig.h",
+              "RelativeDocumentMoniker": "Utility\\ProjectConfig.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\ProjectConfig.h",
+              "RelativeToolTip": "Utility\\ProjectConfig.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwCEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:14:00.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "InputManager.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\InputManager.cpp",
+              "RelativeDocumentMoniker": "Utility\\InputManager.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\InputManager.cpp",
+              "RelativeToolTip": "Utility\\InputManager.cpp",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAgwIMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-05T02:13:29.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AppMain.cpp",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\AppMain.cpp",
+              "RelativeDocumentMoniker": "AppMain.cpp",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\AppMain.cpp",
+              "RelativeToolTip": "AppMain.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-01T01:28:24.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "InputManager.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\InputManager.h",
+              "RelativeDocumentMoniker": "Utility\\InputManager.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\InputManager.h",
+              "RelativeToolTip": "Utility\\InputManager.h",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:13:01.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Collision.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Collision.h",
+              "RelativeDocumentMoniker": "Utility\\Collision.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Collision.h",
+              "RelativeToolTip": "Utility\\Collision.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-05T02:12:20.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Application.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Application.h",
+              "RelativeDocumentMoniker": "Utility\\Application.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF_Arata\\Utility\\Application.h",
+              "RelativeToolTip": "Utility\\Application.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-01T01:28:12.805Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
