@@ -12,10 +12,10 @@ enum class ChoiceEffectState {
     Incorrect    // 不正解（赤色表示）
 };
 
-// 推理の要素（犯人、動機、凶器）
+// 推理の要素
 struct ReasoningElement {
     std::string text;               // 表示テキスト
-    std::vector<std::string> contradictoryEvidences; // これを持っていると除外される（複数可）
+    std::vector<std::string> contradictoryEvidences; 
     bool isEliminated;              // 除外フラグ
     bool isCorrect;                 // 正解かどうか
 
@@ -58,13 +58,17 @@ private:
 
     std::string lastHintMessage;
 
+    std::vector<ReasoningElement>* GetCurrentOptionsMutable();
+
 public:
     ReasoningManager();
     void Initialize();
     void Update(float deltaTime);
     void Draw() const;
 
-    void FilterOptions(const std::vector<std::string>& collectedEvidence);
+    int TryEliminateWithEvidence(const std::string& evidenceName);
+
+    void DamageLife();
 
     void SetActive(bool active) { isActive = active; }
     bool IsActive() const { return isActive; }

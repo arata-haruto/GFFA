@@ -7,8 +7,8 @@
 class ResourceManager : public Singleton<ResourceManager>
 {
 private:
-	std::unordered_map<std::string, std::vector<int>> image_container;		//‰æ‘œƒRƒ“ƒeƒi
-	std::unordered_map<std::string, int> sound_container;					//‰¹Œ¹ƒRƒ“ƒeƒi
+	std::unordered_map<std::string, std::vector<int>> image_container;		//ç”»åƒã‚³ãƒ³ãƒ†ãƒŠ
+	std::unordered_map<std::string, int> sound_container;					//éŸ³æºã‚³ãƒ³ãƒ†ãƒŠ
 
 public:
 	const std::vector<int>& GetImageResource(const std::string& file_name, int all_num = 1, int num_x = 1, int num_y = 1, int size_x = 0, int size_y = 0);
@@ -16,9 +16,9 @@ public:
 	void UnloadAllResourceData();
 
 private:
-	void CreateImageResource(const std::string& file_path);			//“Ç‚İ‚ñ‚¾‰æ‘œ‚ğƒRƒ“ƒeƒi‚É“ü‚ê‚é
-	void CreateImagesResource(std::string file_name, int all_num, int num_x, int num_y, int size_x, int size_y);		//‰æ‘œ‚Ì“Ç‚İ‚İ
-	void CreateSoundsResource(std::string file_path);				//‰¹Œ¹‚Ì“Ç‚İ‚İ
-	void UnloadImageResourceData();			//ƒƒ‚ƒŠ‚ÌŠJ•ú
-	void UnloadSoundResourceData();			//ƒƒ‚ƒŠ‚ÌŠJ•ú
+	void CreateImageResource(const std::string& file_path);			//èª­ã¿è¾¼ã‚“ã ç”»åƒã‚’ã‚³ãƒ³ãƒ†ãƒŠã«å…¥ã‚Œã‚‹
+	void CreateImagesResource(std::string file_name, int all_num, int num_x, int num_y, int size_x, int size_y);		//ç”»åƒã®èª­ã¿è¾¼ã¿
+	void CreateSoundsResource(std::string file_path);				//éŸ³æºã®èª­ã¿è¾¼ã¿
+	void UnloadImageResourceData();			//ãƒ¡ãƒ¢ãƒªã®é–‹æ”¾
+	void UnloadSoundResourceData();			//ãƒ¡ãƒ¢ãƒªã®é–‹æ”¾
 };

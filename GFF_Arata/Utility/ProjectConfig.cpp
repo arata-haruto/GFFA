@@ -1,44 +1,44 @@
 #include "ProjectConfig.h"
 #include "DxLib.h"
 
-// ƒOƒ[ƒoƒ‹•Ï”’è‹`
-LONGLONG old_time;		// ‘O‰ñŒv‘ª’l
-LONGLONG now_time;		// Œ»İŒv‘ª’l
-float delta_second;		// ‚PƒtƒŒ[ƒ€‚ ‚½‚è‚ÌŠÔ
+// ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°å®šç¾©
+LONGLONG old_time;		// å‰å›è¨ˆæ¸¬å€¤
+LONGLONG now_time;		// ç¾åœ¨è¨ˆæ¸¬å€¤
+float delta_second;		// ï¼‘ãƒ•ãƒ¬ãƒ¼ãƒ ã‚ãŸã‚Šã®æ™‚é–“
 
-// ƒtƒŒ[ƒ€ŠÔŒv‘ª
+// ãƒ•ãƒ¬ãƒ¼ãƒ æ™‚é–“è¨ˆæ¸¬
 void FreamControl()
 {
-	// Œ»İŠÔ‚Ìæ“¾iƒÊ•bj
+	// ç¾åœ¨æ™‚é–“ã®å–å¾—ï¼ˆÎ¼ç§’ï¼‰
 	now_time = GetNowHiPerformanceCount();
 
-	// ŠJnŠÔ‚©‚çŒ»İŠÔ‚Ü‚Å‚ÉŒo‰ß‚µ‚½ŠÔ‚ğŒvZ‚·‚éiƒÊ•bj
-	// •ª‰ğ”\‚ğƒÊ•b¨•b‚É•ÏŠ·‚·‚é
+	// é–‹å§‹æ™‚é–“ã‹ã‚‰ç¾åœ¨æ™‚é–“ã¾ã§ã«çµŒéã—ãŸæ™‚é–“ã‚’è¨ˆç®—ã™ã‚‹ï¼ˆÎ¼ç§’ï¼‰
+	// åˆ†è§£èƒ½ã‚’Î¼ç§’â†’ç§’ã«å¤‰æ›ã™ã‚‹
 	delta_second = (float)(now_time - old_time) * 1.0e-6f;
 
-	// Œv‘ªŠJnŠÔ‚ğXV‚·‚é
+	// è¨ˆæ¸¬é–‹å§‹æ™‚é–“ã‚’æ›´æ–°ã™ã‚‹
 	old_time = now_time;
 
-	// ƒfƒBƒXƒvƒŒƒC‚ÌƒŠƒtƒŒƒbƒVƒ…ƒŒ[ƒg‚ğæ“¾‚·‚é
+	// ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã®ãƒªãƒ•ãƒ¬ãƒƒã‚·ãƒ¥ãƒ¬ãƒ¼ãƒˆã‚’å–å¾—ã™ã‚‹
 	float refresh_rate = (float)GetRefreshRate();
 
-	// ‚PƒtƒŒ[ƒ€“–‚½‚è‚ÌŠÔ‚ª1/ƒŠƒtƒŒƒbƒVƒ…ƒŒ[ƒg•b‚ğ’´‚¦‚½‚çA®‚¦‚é
+	// ï¼‘ãƒ•ãƒ¬ãƒ¼ãƒ å½“ãŸã‚Šã®æ™‚é–“ãŒ1/ãƒªãƒ•ãƒ¬ãƒƒã‚·ãƒ¥ãƒ¬ãƒ¼ãƒˆç§’ã‚’è¶…ãˆãŸã‚‰ã€æ•´ãˆã‚‹
 	if (delta_second > (1.0f / refresh_rate))
 	{
 		delta_second = (1.0f / refresh_rate);
 	}
 }
 
-// 1ƒtƒŒ[ƒ€“–‚½‚è‚ÌŠÔ‚ğæ“¾‚·‚é
+// 1ãƒ•ãƒ¬ãƒ¼ãƒ å½“ãŸã‚Šã®æ™‚é–“ã‚’å–å¾—ã™ã‚‹
 const float& GetDeltaSecond()
 {
 	return delta_second;
 }
 
-// ƒGƒ‰[“à—e‚ğo—Í‚·‚é
+// ã‚¨ãƒ©ãƒ¼å†…å®¹ã‚’å‡ºåŠ›ã™ã‚‹
 int ErrorThrow(std::string error_log)
 {
-	// Log.txt‚ÉƒGƒ‰[“à—e‚ğ’Ç‰Á‚·‚é
+	// Log.txtã«ã‚¨ãƒ©ãƒ¼å†…å®¹ã‚’è¿½åŠ ã™ã‚‹
 	ErrorLogFmtAdd(error_log.c_str());
 	return D_FAILURE;
 }

@@ -3,37 +3,37 @@
 
 const std::vector<int>& ResourceManager::GetImageResource(const std::string& file_name, int all_num, int num_x, int num_y, int size_x, int size_y)
 {
-	// ƒRƒ“ƒeƒi“à‚É‰æ‘œƒf[ƒ^‚ª–³‚¢ê‡A‰æ‘œ“Ç‚İ‚İ‚ğs‚¤
+	// ã‚³ãƒ³ãƒ†ãƒŠå†…ã«ç”»åƒãƒ‡ãƒ¼ã‚¿ãŒç„¡ã„å ´åˆã€ç”»åƒèª­ã¿è¾¼ã¿ã‚’è¡Œã†
 	if (image_container.count(file_name) == NULL)
 	{
-		// •ªŠ„“Ç‚İ‚İ‚ğs‚¤Hs‚í‚È‚¢H
+		// åˆ†å‰²èª­ã¿è¾¼ã¿ã‚’è¡Œã†ï¼Ÿè¡Œã‚ãªã„ï¼Ÿ
 		if (all_num != 1)
 		{
-			// •ªŠ„“Ç‚İ‚İ‚ğs‚¤
+			// åˆ†å‰²èª­ã¿è¾¼ã¿ã‚’è¡Œã†
 			CreateImagesResource(file_name, all_num, num_x, num_y, size_x, size_y);
 		}
 		if (all_num == 1)
 		{
-			// •ªŠ„“Ç‚İ‚İ‚ğs‚í‚È‚¢
+			// åˆ†å‰²èª­ã¿è¾¼ã¿ã‚’è¡Œã‚ãªã„
 			CreateImageResource(file_name);
 		}
 
 	}
 
-	// ƒRƒ“ƒeƒi“à‚Ìƒf[ƒ^‚ğ•Ô‚·
+	// ã‚³ãƒ³ãƒ†ãƒŠå†…ã®ãƒ‡ãƒ¼ã‚¿ã‚’è¿”ã™
 	return image_container[file_name];
 }
 
 const int& ResourceManager::GetSoundResource(const std::string& file_path)
 {
-	// ƒRƒ“ƒeƒi“à‚Éw’èƒtƒ@ƒCƒ‹‚ª–³‚¯‚ê‚ÎA¶¬‚·‚é
+	// ã‚³ãƒ³ãƒ†ãƒŠå†…ã«æŒ‡å®šãƒ•ã‚¡ã‚¤ãƒ«ãŒç„¡ã‘ã‚Œã°ã€ç”Ÿæˆã™ã‚‹
 	if (sound_container.count(file_path) == NULL)
 	{
-		// ‰¹Œ¹‚Ì“Ç‚İ‚İ‚ğs‚¤
+		// éŸ³æºã®èª­ã¿è¾¼ã¿ã‚’è¡Œã†
 		CreateSoundsResource(file_path);
 	}
 
-	// ƒRƒ“ƒeƒi“à‚Ìƒf[ƒ^‚ğ•Ô‚·
+	// ã‚³ãƒ³ãƒ†ãƒŠå†…ã®ãƒ‡ãƒ¼ã‚¿ã‚’è¿”ã™
 	return sound_container[file_path];
 }
 
@@ -45,91 +45,91 @@ void ResourceManager::UnloadAllResourceData()
 
 void ResourceManager::CreateImageResource(const std::string& file_path)
 {
-	// w’è‚³‚ê‚½‰æ‘œƒtƒ@ƒCƒ‹“Ç‚İ‚Ş
+	// æŒ‡å®šã•ã‚ŒãŸç”»åƒãƒ•ã‚¡ã‚¤ãƒ«èª­ã¿è¾¼ã‚€
 	int handle = LoadGraph(file_path.c_str());
 
-	// ƒGƒ‰[ƒ`ƒFƒbƒN
+	// ã‚¨ãƒ©ãƒ¼ãƒã‚§ãƒƒã‚¯
 	if (handle == -1)
 	{
-		throw (file_path + "‚ª‚ ‚è‚Ü‚¹‚ñ\n");
+		throw (file_path + "ãŒã‚ã‚Šã¾ã›ã‚“\n");
 	}
 
-	// ƒRƒ“ƒeƒi‚É“Ç‚İ‚ñ‚¾‰æ‘œ‚ğ’Ç‰Á‚·‚é
+	// ã‚³ãƒ³ãƒ†ãƒŠã«èª­ã¿è¾¼ã‚“ã ç”»åƒã‚’è¿½åŠ ã™ã‚‹
 	image_container[file_path].push_back(handle);
 }
 
 void ResourceManager::CreateImagesResource(std::string file_name, int all_num, int num_x, int num_y, int size_x, int size_y)
 {
-	// •ªŠ„‚·‚é‰æ‘œ•ª‚¾‚¯ƒƒ‚ƒŠ‚ğŠm•Û‚·‚é
+	// åˆ†å‰²ã™ã‚‹ç”»åƒåˆ†ã ã‘ãƒ¡ãƒ¢ãƒªã‚’ç¢ºä¿ã™ã‚‹
 	int* handle = new int[all_num];
 
-	// w’è‚³‚ê‚½‰æ‘œƒtƒ@ƒCƒ‹‚ğ•ªŠ„‚Å“Ç‚İ‚Ş
+	// æŒ‡å®šã•ã‚ŒãŸç”»åƒãƒ•ã‚¡ã‚¤ãƒ«ã‚’åˆ†å‰²ã§èª­ã¿è¾¼ã‚€
 	int result = LoadDivGraph(file_name.c_str(), all_num, num_x, num_y, size_x, size_y, handle);
 
-	// ƒGƒ‰[ƒ`ƒFƒbƒN
+	// ã‚¨ãƒ©ãƒ¼ãƒã‚§ãƒƒã‚¯
 	if (result == -1)
 	{
-		throw (file_name + "‚ª‚ ‚è‚Ü‚¹‚ñ\n");
+		throw (file_name + "ãŒã‚ã‚Šã¾ã›ã‚“\n");
 	}
 
-	// ƒRƒ“ƒeƒi‚É“Ç‚İ‚ñ‚¾‰æ‘œ‚ğ’Ç‰Á‚·‚é
+	// ã‚³ãƒ³ãƒ†ãƒŠã«èª­ã¿è¾¼ã‚“ã ç”»åƒã‚’è¿½åŠ ã™ã‚‹
 	for (int i = 0; i < all_num; i++)
 	{
 		image_container[file_name].push_back(handle[i]);
 	}
 
-	// Šm•Û‚µ‚½ƒƒ‚ƒŠ‚ğ‰ğ•ú‚·‚é
+	// ç¢ºä¿ã—ãŸãƒ¡ãƒ¢ãƒªã‚’è§£æ”¾ã™ã‚‹
 	delete[] handle;
 }
 
 void ResourceManager::CreateSoundsResource(std::string file_path)
 {
-	// w’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ğ“Ç‚İ‚Ş
+	// æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚€
 	int handle = LoadSoundMem(file_path.c_str());
 
-	// ƒGƒ‰[ƒ`ƒFƒbƒN
+	// ã‚¨ãƒ©ãƒ¼ãƒã‚§ãƒƒã‚¯
 	if (handle == -1)
 	{
-		throw (file_path + "‚ª‚ ‚è‚Ü‚¹‚ñ\n");
+		throw (file_path + "ãŒã‚ã‚Šã¾ã›ã‚“\n");
 	}
 
-	// ƒRƒ“ƒeƒi‚É“Ç‚İ‚ñ‚¾‰¹Œ¹‚ğ’Ç‰Á‚·‚é
+	// ã‚³ãƒ³ãƒ†ãƒŠã«èª­ã¿è¾¼ã‚“ã éŸ³æºã‚’è¿½åŠ ã™ã‚‹
 	sound_container[file_path] = handle;
 }
 
 void ResourceManager::UnloadImageResourceData()
 {
-	// ƒRƒ“ƒeƒi“à‚É‰æ‘œ‚ª–³‚¯‚ê‚ÎAˆ—‚ğI—¹‚·‚é
+	// ã‚³ãƒ³ãƒ†ãƒŠå†…ã«ç”»åƒãŒç„¡ã‘ã‚Œã°ã€å‡¦ç†ã‚’çµ‚äº†ã™ã‚‹
 	if (image_container.size() == NULL)
 	{
 		return;
 	}
 
-	// ‘S‚Ä‚Ì‰æ‘œ‚ğíœ
+	// å…¨ã¦ã®ç”»åƒã‚’å‰Šé™¤
 	for (std::pair<std::string, std::vector<int>> value : image_container)
 	{
 		DeleteSharingGraph(value.second[0]);
 		value.second.clear();
 	}
 
-	// ƒRƒ“ƒeƒi‚ğ‰ğ•ú
+	// ã‚³ãƒ³ãƒ†ãƒŠã‚’è§£æ”¾
 	image_container.clear();
 }
 
 void ResourceManager::UnloadSoundResourceData()
 {
-	// ƒRƒ“ƒeƒi“à‚É‰¹Œ¹‚ª–³‚¯‚ê‚ÎAˆ—‚ğI—¹‚·‚é
+	// ã‚³ãƒ³ãƒ†ãƒŠå†…ã«éŸ³æºãŒç„¡ã‘ã‚Œã°ã€å‡¦ç†ã‚’çµ‚äº†ã™ã‚‹
 	if (sound_container.size() == NULL)
 	{
 		return;
 	}
 
-	// ‘S‚Ä‚Ì‰¹Œ¹‚ğíœ
+	// å…¨ã¦ã®éŸ³æºã‚’å‰Šé™¤
 	for (std::pair<std::string, int> value : sound_container)
 	{
 		DeleteSoundMem(value.second);
 	}
 
-	// ƒRƒ“ƒeƒi‚ğ‰ğ•ú
+	// ã‚³ãƒ³ãƒ†ãƒŠã‚’è§£æ”¾
 	sound_container.clear();
 }

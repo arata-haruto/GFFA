@@ -1,6 +1,6 @@
 #pragma once
 
-// 2ŸŒ³ƒxƒNƒgƒ‹ƒNƒ‰ƒX
+// 2æ¬¡å…ƒãƒ™ã‚¯ãƒˆãƒ«ã‚¯ãƒ©ã‚¹
 class Vector2D
 {
 public:
@@ -14,7 +14,7 @@ public:
 	~Vector2D() {}
 
 public:
-	// ‘ã“ü
+	// ä»£å…¥
 	Vector2D& operator = (const Vector2D& v)
 	{
 		this->x = v.x;
@@ -23,7 +23,7 @@ public:
 		return *this;
 	}
 
-	// ‘«‚µZ
+	// è¶³ã—ç®—
 	const Vector2D operator + (const Vector2D& v) const
 	{
 		return Vector2D(this->x + v.x, this->y + v.y);
@@ -36,7 +36,7 @@ public:
 		return *this;
 	}
 
-	// ˆø‚«Z
+	// å¼•ãç®—
 	const Vector2D operator - (const Vector2D& v) const
 	{
 		return Vector2D(this->x - v.x, this->y - v.y);
@@ -49,7 +49,7 @@ public:
 		return *this;
 	}
 
-	// Š|‚¯Z
+	// æ›ã‘ç®—
 	const Vector2D operator * (const float& scalar) const
 	{
 		return Vector2D(this->x * scalar, this->y * scalar);
@@ -73,32 +73,32 @@ public:
 		return *this;
 	}
 
-	// Š„‚èZ
+	// å‰²ã‚Šç®—
 	const Vector2D operator / (const float& scalar) const;
 	const Vector2D operator / (const Vector2D& v) const;
 	Vector2D& operator /= (const float& scalar);
 	Vector2D& operator /= (const Vector2D& v);
 
 public:
-	// ƒxƒNƒgƒ‹‚Ì’·‚³
+	// ãƒ™ã‚¯ãƒˆãƒ«ã®é•·ã•
 	float SqrLength() const;
 	float Length() const;
 
-	// ³‹K‰»
+	// æ­£è¦åŒ–
 	Vector2D Normalize() const;
 
-	// “àÏ
+	// å†…ç©
 	static float Dot(const Vector2D& a);
 	static float Dot(const Vector2D& a, const Vector2D& b);
-	// ŠOÏ
+	// å¤–ç©
 	static float Cross(const Vector2D& a, const Vector2D& b);
-	// üŒ`•âŠÔ
+	// ç·šå½¢è£œé–“
 	static Vector2D Lerp(const Vector2D& a, const Vector2D& b, const float t);
 
-	// 2“_ŠÔ‚Ì‹——£
+	// 2ç‚¹é–“ã®è·é›¢
 	static float Distance(const Vector2D& a, const Vector2D& b);
 
-	// –€C‚Ì‰e‹¿‚ğl—¶‚µ‚Ä‘¬“x‚ğXV‚·‚éŠÖ”
+	// æ‘©æ“¦ã®å½±éŸ¿ã‚’è€ƒæ…®ã—ã¦é€Ÿåº¦ã‚’æ›´æ–°ã™ã‚‹é–¢æ•°
 	//static Vector2D applyFriction(Vector2D velocity, float normalForce, float mu_static, float mu_kinetic, float deltaTime);
 
 };

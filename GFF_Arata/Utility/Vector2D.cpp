@@ -3,7 +3,7 @@
 
 const Vector2D Vector2D::operator/(const float& scalar) const
 {
-	// 0œZ‚Ìl—¶
+	// 0é™¤ç®—ã®è€ƒæ…®
 	if (fabsf(scalar) < 1.0e-6f)
 	{
 		return Vector2D(0.0f);
@@ -14,7 +14,7 @@ const Vector2D Vector2D::operator/(const float& scalar) const
 
 const Vector2D Vector2D::operator/(const Vector2D& v) const
 {
-	// 0œZ‚Ìl—¶
+	// 0é™¤ç®—ã®è€ƒæ…®
 	if (fabsf(v.x) < 1.0e-6f || fabsf(v.y) < 1.0e-6f)
 	{
 		return Vector2D(0.0f);
@@ -25,7 +25,7 @@ const Vector2D Vector2D::operator/(const Vector2D& v) const
 
 Vector2D& Vector2D::operator/=(const float& scalar)
 {
-	// 0œZ‚Ìl—¶
+	// 0é™¤ç®—ã®è€ƒæ…®
 	if (fabsf(scalar) < 1.0e-6f)
 	{
 		this->x = 0.0f;
@@ -42,7 +42,7 @@ Vector2D& Vector2D::operator/=(const float& scalar)
 
 Vector2D& Vector2D::operator/=(const Vector2D& v)
 {
-	// 0œZ‚Ìl—¶
+	// 0é™¤ç®—ã®è€ƒæ…®
 	if (fabsf(v.x) < 1.0e-6f || fabsf(v.y) < 1.0e-6f)
 	{
 		this->x = 0.0f;
@@ -137,31 +137,31 @@ float Vector2D::Distance(const Vector2D& a, const Vector2D& b)
 	return Vector2D(a - b).SqrLength();
 }
 
-// –€C‚Ì‰e‹¿‚ğl—¶‚µ‚Ä‘¬“x‚ğXV‚·‚éŠÖ”
+// æ‘©æ“¦ã®å½±éŸ¿ã‚’è€ƒæ…®ã—ã¦é€Ÿåº¦ã‚’æ›´æ–°ã™ã‚‹é–¢æ•°
 //Vector2D Vector2D::applyFriction(Vector2D velocity, float normalForce, float mu_static, float mu_kinetic, float deltaTime) {
-//	float speed = velocity.Length(); // ‘¬“x‚Ì‘å‚«‚³
+//	float speed = velocity.Length(); // é€Ÿåº¦ã®å¤§ãã•
 //
 //	if (speed == 0)
 //	{
-//		return velocity;   // ‘¬“x‚ª0‚È‚ç–€C‚Íì—p‚µ‚È‚¢
+//		return velocity;   // é€Ÿåº¦ãŒ0ãªã‚‰æ‘©æ“¦ã¯ä½œç”¨ã—ãªã„
 //	}
 //
 //	Vector2D frictionForce;
-//	Vector2D direction = velocity.Normalize(); // ‘¬“x‚Ì‹tŒü‚«‚É–€C‚ª“­‚­
+//	Vector2D direction = velocity.Normalize(); // é€Ÿåº¦ã®é€†å‘ãã«æ‘©æ“¦ãŒåƒã
 //
-//	// Ã~–€C‚ğ“K—p
+//	// é™æ­¢æ‘©æ“¦ã‚’é©ç”¨
 //	float staticFriction = mu_static * normalForce;
 //
 //	if (speed < staticFriction * deltaTime) {
-//		// –€C‚ª\•ª‹­‚­‚Ä•¨‘Ì‚ª~‚Ü‚éê‡
+//		// æ‘©æ“¦ãŒååˆ†å¼·ãã¦ç‰©ä½“ãŒæ­¢ã¾ã‚‹å ´åˆ
 //		return velocity -= 0.1f;
 //		//{ 0.0f, 0.0f };
 //	}
 //
-//	// “®–€C‚ğ“K—p
+//	// å‹•æ‘©æ“¦ã‚’é©ç”¨
 //	float kineticFriction = mu_kinetic * normalForce;
-//	frictionForce = direction * (-kineticFriction); // –€C—Í‚Í‘¬“x‚Ì‹tŒü‚«
+//	frictionForce = direction * (-kineticFriction); // æ‘©æ“¦åŠ›ã¯é€Ÿåº¦ã®é€†å‘ã
 //
-//	// –€C‚Ì‰e‹¿‚ğ‘¬“x‚É”½‰f
+//	// æ‘©æ“¦ã®å½±éŸ¿ã‚’é€Ÿåº¦ã«åæ˜ 
 //	return velocity + (frictionForce * deltaTime);
 //}
