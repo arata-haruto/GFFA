@@ -2,19 +2,669 @@
 C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Application.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
   (ソース ファイル 'AppMain.cpp' をコンパイルしています)
   
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ProjectConfig.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'AppMain.cpp' をコンパイルしています)
+  
 C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\SceneManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
   (ソース ファイル 'AppMain.cpp' をコンパイルしています)
   
-  DialogueSystem.cpp
-  NPCManager.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(208,21): warning C4244: '初期化中': '__int64' から 'int' への変換です。データが失われる可能性があります。
-  NPC.cpp
-  Suspect.cpp
-  ChoiceEffect.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ChoiceEffect.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ChoiceEffect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Utility/ChoiceEffect.cpp' をコンパイルしています)
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'AppMain.cpp' をコンパイルしています)
   
+  Item.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Item.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Item.cpp' をコンパイルしています)
+  
+  NPC.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/NPC.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/NPC.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.cpp(89,77): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.cpp(92,9): error C2143: 構文エラー: ')' が 'if' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.cpp(92,9): error C2143: 構文エラー: ';' が 'if' の前にありません。
+  Player.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(62,20): error C3872: '0x2267': この文字を識別子で使用することはできません
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(62,148): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(76,64): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(80,61): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(83,69): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(112,39): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(62,20): error C3688: リテラル サフィックス '逕ｷ諤ｧ縺ｮ繧医≧縺ｪ莠ｺ蠖ｱ縺梧丐縺｣縺ｦ縺・ｋ' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""逕ｷ諤ｧ縺ｮ繧医≧縺ｪ莠ｺ蠖ｱ縺梧丐縺｣縺ｦ縺・ｋ' が見つかりません
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(63,17): error C2146: 構文エラー: ')' が、識別子 'AREA1_START' の前に必要です。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(63,97): error C2059: 構文エラー: ','
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(65,15): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(65,15): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(66,88): error C2059: 構文エラー: ','
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(69,17): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(69,17): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(70,102): error C2059: 構文エラー: ','
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(72,17): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(72,17): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(73,92): error C2059: 構文エラー: ','
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(76,19): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(76,19): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(77,101): error C2059: 構文エラー: ','
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(80,21): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(80,21): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(81,101): error C2059: 構文エラー: ','
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(83,21): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(83,21): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(85,9): error C2059: 構文エラー: '}'
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(85,9): error C2143: 構文エラー: ';' が '}' の前にありません。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(86,5): error C2059: 構文エラー: '}'
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(86,5): error C2143: 構文エラー: ';' が '}' の前にありません。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(89,65): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(89,65): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(113,9): error C2146: 構文エラー: ';' が、識別子 'default' の前に必要です。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+  Suspect.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Suspect.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Suspect.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(4,27): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(5,5): error C2146: 構文エラー: ')' が、識別子 'suspectType' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(7,1): error C2512: 'NPC': クラス、構造体、共用体に既定のコンストラクターがありません。
+      C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.h(23,7):
+      'NPC' の宣言を確認してください
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(23,16): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(24,9): error C2146: 構文エラー: ';' が、識別子 'role' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(24,16): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(25,9): error C2146: 構文エラー: ';' が、識別子 'state' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(30,16): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(31,9): error C2146: 構文エラー: ';' が、識別子 'role' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(49,141): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(50,9): error C2146: 構文エラー: ')' が、識別子 'AddTestimony' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(50,22): error C2143: 構文エラー: ';' が '{' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(50,22): error C2143: 構文エラー: ')' が ';' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(50,193): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(50,194): error C2059: 構文エラー: ')'
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(51,176): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(52,9): error C2146: 構文エラー: ')' が、識別子 'AddTestimony' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(52,22): error C2143: 構文エラー: ';' が '{' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(52,22): error C2143: 構文エラー: ')' が ';' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(52,214): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(53,9): error C2143: 構文エラー: ';' が 'break' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(58,204): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(59,9): error C2146: 構文エラー: ')' が、識別子 'AddTestimony' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(59,22): error C2143: 構文エラー: ';' が '{' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(59,22): error C2143: 構文エラー: ')' が ';' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(59,161): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(60,9): error C2146: 構文エラー: ';' が、識別子 'AddTestimony' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(66,211): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(67,9): error C2146: 構文エラー: ')' が、識別子 'AddTestimony' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(67,22): error C2143: 構文エラー: ';' が '{' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(67,22): error C2143: 構文エラー: ')' が ';' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(67,185): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(69,9): error C2146: 構文エラー: ';' が、識別子 'AddTestimony' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(69,24): error C3872: '0xf8f0': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(69,24): error C3688: リテラル サフィックス '髦ｲ迥ｯ繧ｫ繝｡繝ｩ縺ｮ譏蜒・' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""髦ｲ迥ｯ繧ｫ繝｡繝ｩ縺ｮ譏蜒・' が見つかりません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(75,131): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(76,9): error C2146: 構文エラー: ')' が、識別子 'AddTestimony' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(76,22): error C2143: 構文エラー: ';' が '{' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(76,22): error C2143: 構文エラー: ')' が ';' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(76,171): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(77,9): error C2146: 構文エラー: ';' が、識別子 'AddTestimony' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(77,143): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(78,9): error C2146: 構文エラー: ')' が、識別子 'AddTestimony' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(78,22): error C2143: 構文エラー: ';' が '{' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(78,22): error C2143: 構文エラー: ')' が ';' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(78,225): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(78,24): error C3688: リテラル サフィックス '繧ｿ繝舌さ縺ｮ蜷ｸ縺・ｮｻ' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""繧ｿ繝舌さ縺ｮ蜷ｸ縺・ｮｻ' が見つかりません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(79,9): error C2143: 構文エラー: ';' が 'break' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.cpp(76,22): error C1075: '{': 一致するトークンが見つかりませんでした
+  HelpScene.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/Help/HelpScene.cpp' をコンパイルしています)
+  
+  InGameScene.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ItemManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(62,20): error C3872: '0x2267': この文字を識別子で使用することはできません
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(62,148): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(76,64): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(80,61): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(83,69): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(112,39): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(62,20): error C3688: リテラル サフィックス '逕ｷ諤ｧ縺ｮ繧医≧縺ｪ莠ｺ蠖ｱ縺梧丐縺｣縺ｦ縺・ｋ' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""逕ｷ諤ｧ縺ｮ繧医≧縺ｪ莠ｺ蠖ｱ縺梧丐縺｣縺ｦ縺・ｋ' が見つかりません
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(63,17): error C2146: 構文エラー: ')' が、識別子 'AREA1_START' の前に必要です。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(63,97): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(65,15): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(65,15): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(66,88): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(69,17): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(69,17): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(70,102): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(72,17): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(72,17): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(73,92): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(76,19): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(76,19): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(77,101): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(80,21): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(80,21): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(81,101): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(83,21): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(83,21): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(85,9): error C2059: 構文エラー: '}'
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(85,9): error C2143: 構文エラー: ';' が '}' の前にありません。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(86,5): error C2059: 構文エラー: '}'
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(86,5): error C2143: 構文エラー: ';' が '}' の前にありません。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(89,65): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(89,65): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(113,9): error C2146: 構文エラー: ';' が、識別子 'default' の前に必要です。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\Title\TitleScene.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ResourceManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(152,50): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(153,5): error C2146: 構文エラー: ')' が、識別子 'dialogueSystem' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(153,5): error C2146: 構文エラー: ';' が、識別子 'dialogueSystem' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(153,50): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,5): error C2146: 構文エラー: ')' が、識別子 'dialogueSystem' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,5): error C2146: 構文エラー: ';' が、識別子 'dialogueSystem' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,46): error C3872: '0x222b': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,46): error C3872: '0x2015': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,46): error C3872: '0x80': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,46): error C3872: '0x25a1': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,46): error C3872: '0x2260': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,46): error C3688: リテラル サフィックス '蜈ｨ蜩｡蜍輔￥縺ｪ・∫樟蝣ｴ讀懆ｨｼ縺吶ｋ縺橸ｼ―n蜷帙ｂ髢｢菫り・□縺ｪ縲ゅ≠縺｣縺｡縺ｧ蠕・ｩ溘＠縺ｦ縺上ｌ縲・' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""蜈ｨ蜩｡蜍輔￥縺ｪ・∫樟蝣ｴ讀懆ｨｼ縺吶ｋ縺橸ｼ―n蜷帙ｂ髢｢菫り・□縺ｪ縲ゅ≠縺｣縺｡縺ｧ蠕・ｩ溘＠縺ｦ縺上ｌ縲・' が見つかりません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,45): error C2440: '<function-style-cast>': 'initializer list' から 'DialogueData' に変換できません。
+      C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,45):
+      'DialogueData::DialogueData': オーバーロードされた関数ですべての引数の型を変換できませんでした
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\DialogueSystem.h(23,5):
+          'DialogueData::DialogueData(const std::string &,const std::string &,CharacterPosition,int,int,bool)' の可能性があります
+              C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,45):
+              'DialogueData::DialogueData(const std::string &,const std::string &,CharacterPosition,int,int,bool)': 引数 1 を 'CharacterPosition' から 'const std::string &' へ変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,263):
+                  理由: 'CharacterPosition' から 'const std::string' へは変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,263):
+                  この変換を実行可能なユーザー定義変換演算子がないか、または演算子を呼び出せません。
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(154,45):
+          引数リスト '(CharacterPosition, int, int)' を一致させようとしているとき
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,46): error C3872: '0x25b2': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,46): error C3872: '0x25a1': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,46): error C3872: '0x221a': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,46): error C3872: '0x80': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,46): error C3872: '0x2606': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,46): error C3688: リテラル サフィックス '蠕・▲縺ｦ縺上□縺輔＞縲らｧ√・謗｢蛛ｵ縺ｧ縺吶・n縺薙・莠倶ｻｶ縲√☆縺ｧ縺ｫ迥ｯ莠ｺ縺瑚ｪｰ縺九ｏ縺九ｊ縺ｾ縺吶・' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""蠕・▲縺ｦ縺上□縺輔＞縲らｧ√・謗｢蛛ｵ縺ｧ縺吶・n縺薙・莠倶ｻｶ縲√☆縺ｧ縺ｫ迥ｯ莠ｺ縺瑚ｪｰ縺九ｏ縺九ｊ縺ｾ縺吶・' が見つかりません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,45): error C2440: '<function-style-cast>': 'initializer list' から 'DialogueData' に変換できません。
+      C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,45):
+      'DialogueData::DialogueData': オーバーロードされた関数ですべての引数の型を変換できませんでした
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\DialogueSystem.h(23,5):
+          'DialogueData::DialogueData(const std::string &,const std::string &,CharacterPosition,int,int,bool)' の可能性があります
+              C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,45):
+              'DialogueData::DialogueData(const std::string &,const std::string &,CharacterPosition,int,int,bool)': 引数 1 を 'CharacterPosition' から 'const std::string &' へ変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,268):
+                  理由: 'CharacterPosition' から 'const std::string' へは変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,268):
+                  この変換を実行可能なユーザー定義変換演算子がないか、または演算子を呼び出せません。
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(155,45):
+          引数リスト '(CharacterPosition, int, int)' を一致させようとしているとき
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,46): error C3872: '0x80': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,46): error C3872: '0x25a1': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,46): error C3872: '0xf8f0': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,46): error C3688: リテラル サフィックス '縺ｯ縺・ｼ滉ｽ戊ｨ縺｣縺ｦ繧薙□縺雁燕縲・n縺薙％縺ｯ莠倶ｻｶ迴ｾ蝣ｴ縺縲よｰ鷹俣莠ｺ縺ｯ蟶ｰ繧後・' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""縺ｯ縺・ｼ滉ｽ戊ｨ縺｣縺ｦ繧薙□縺雁燕縲・n縺薙％縺ｯ莠倶ｻｶ迴ｾ蝣ｴ縺縲よｰ鷹俣莠ｺ縺ｯ蟶ｰ繧後・' が見つかりません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,45): error C2440: '<function-style-cast>': 'initializer list' から 'DialogueData' に変換できません。
+      C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,45):
+      'DialogueData::DialogueData': オーバーロードされた関数ですべての引数の型を変換できませんでした
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\DialogueSystem.h(23,5):
+          'DialogueData::DialogueData(const std::string &,const std::string &,CharacterPosition,int,int,bool)' の可能性があります
+              C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,45):
+              'DialogueData::DialogueData(const std::string &,const std::string &,CharacterPosition,int,int,bool)': 引数 1 を 'CharacterPosition' から 'const std::string &' へ変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,244):
+                  理由: 'CharacterPosition' から 'const std::string' へは変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,244):
+                  この変換を実行可能なユーザー定義変換演算子がないか、または演算子を呼び出せません。
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(156,45):
+          引数リスト '(CharacterPosition, int, int)' を一致させようとしているとき
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,68): error C3872: '0x2260': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,68): error C3872: '0x221a': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,68): error C3872: '0x222a': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,68): error C3872: '0x80': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,68): error C2143: 構文エラー: ')' が 'user-defined literal' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,45): error C2440: '<function-style-cast>': 'const char [13]' から 'DialogueData' に変換できません。
+      C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,45):
+      'DialogueData::DialogueData': オーバーロードされた関数ですべての引数の型を変換できませんでした
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\DialogueSystem.h(30,1):
+          'DialogueData::DialogueData(DialogueData &&)' の可能性があります
+              C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,45):
+              'DialogueData::DialogueData(DialogueData &&)': 引数 1 を 'const char [13]' から 'DialogueData &&' へ変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,46):
+                  理由: 'const char [13]' から 'DialogueData' へは変換できません。
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\DialogueSystem.h(30,1):
+          または 'DialogueData::DialogueData(const DialogueData &)'
+              C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,45):
+              'DialogueData::DialogueData(const DialogueData &)': 引数 1 を 'const char [13]' から 'const DialogueData &' へ変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,46):
+                  理由: 'const char [13]' から 'const DialogueData' へは変換できません。
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,45):
+          引数リスト '(const char [13])' を一致させようとしているとき
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,68): error C2143: 構文エラー: ';' が 'user-defined literal' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,68): error C3688: リテラル サフィックス '蛻・≠繧後・縲√％縺ｮ莠倶ｻｶ繧貞ｮ檎挑縺ｫ隗｣豎ｺ縺ｧ縺阪∪縺吶・' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""蛻・≠繧後・縲√％縺ｮ莠倶ｻｶ繧貞ｮ檎挑縺ｫ隗｣豎ｺ縺ｧ縺阪∪縺吶・' が見つかりません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,236): error C2059: 構文エラー: ')'
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(157,237): error C2059: 構文エラー: ')'
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,68): error C3546: '...': 展開できるパラメーター パックがありません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,71): error C2143: 構文エラー: ')' が '...' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,45): error C2440: '<function-style-cast>': 'const char [13]' から 'DialogueData' に変換できません。
+      C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,45):
+      'DialogueData::DialogueData': オーバーロードされた関数ですべての引数の型を変換できませんでした
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\DialogueSystem.h(30,1):
+          'DialogueData::DialogueData(DialogueData &&)' の可能性があります
+              C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,45):
+              'DialogueData::DialogueData(DialogueData &&)': 引数 1 を 'const char [13]' から 'DialogueData &&' へ変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,46):
+                  理由: 'const char [13]' から 'DialogueData' へは変換できません。
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\DialogueSystem.h(30,1):
+          または 'DialogueData::DialogueData(const DialogueData &)'
+              C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,45):
+              'DialogueData::DialogueData(const DialogueData &)': 引数 1 を 'const char [13]' から 'const DialogueData &' へ変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,46):
+                  理由: 'const char [13]' から 'const DialogueData' へは変換できません。
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,45):
+          引数リスト '(const char [13])' を一致させようとしているとき
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,74): error C3872: '0x80': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,74): error C3872: '0x2191': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,74): error C2146: 構文エラー: ')' が、識別子 '髱｢逋ｽ縺・％縺ｨ險縺・↑縲・n縺倥ｃ縺ゅｄ縺｣縺ｦ縺ｿ繧阪・' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,74): error C2146: 構文エラー: ';' が、識別子 '髱｢逋ｽ縺・％縺ｨ險縺・↑縲・n縺倥ｃ縺ゅｄ縺｣縺ｦ縺ｿ繧阪・' の前に必要です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,74): error C2065: '髱｢逋ｽ縺・％縺ｨ險縺・↑縲・n縺倥ｃ縺ゅｄ縺｣縺ｦ縺ｿ繧阪・': 定義されていない識別子です。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,233): error C2059: 構文エラー: ')'
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(158,234): error C2059: 構文エラー: ')'
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,68): error C3872: '0x25a1': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,68): error C3872: '0xf8f0': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,68): error C3872: '0x221a': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,68): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,68): error C2143: 構文エラー: ')' が 'user-defined literal' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,45): error C2440: '<function-style-cast>': 'const char [13]' から 'DialogueData' に変換できません。
+      C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,45):
+      'DialogueData::DialogueData': オーバーロードされた関数ですべての引数の型を変換できませんでした
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\DialogueSystem.h(30,1):
+          'DialogueData::DialogueData(DialogueData &&)' の可能性があります
+              C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,45):
+              'DialogueData::DialogueData(DialogueData &&)': 引数 1 を 'const char [13]' から 'DialogueData &&' へ変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,46):
+                  理由: 'const char [13]' から 'DialogueData' へは変換できません。
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\DialogueSystem.h(30,1):
+          または 'DialogueData::DialogueData(const DialogueData &)'
+              C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,45):
+              'DialogueData::DialogueData(const DialogueData &)': 引数 1 を 'const char [13]' から 'const DialogueData &' へ変換できません。
+                  C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,46):
+                  理由: 'const char [13]' から 'const DialogueData' へは変換できません。
+          C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,45):
+          引数リスト '(const char [13])' を一致させようとしているとき
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,68): error C2143: 構文エラー: ';' が 'user-defined literal' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,68): error C3688: リテラル サフィックス '蛻・□縲・n險ｼ諡繧帝寔繧√※迥ｯ莠ｺ繧貞ｽ薙※縺ｦ縺ｿ縺帙ｍ・・' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""蛻・□縲・n險ｼ諡繧帝寔繧√※迥ｯ莠ｺ繧貞ｽ薙※縺ｦ縺ｿ縺帙ｍ・・' が見つかりません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,233): error C2059: 構文エラー: ')'
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(159,234): error C2059: 構文エラー: ')'
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(160,46): error C3872: '0x2606': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(160,46): error C3872: '0xb0': この文字を識別子で使用することはできません
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(160,46): error C1003: プログラム内のエラーが 100 個を超えました。コンパイルは中断されます。
+  SceneManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\SceneManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\Title\TitleScene.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ItemManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(62,20): error C3872: '0x2267': この文字を識別子で使用することはできません
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(62,148): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(76,64): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(80,61): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(83,69): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(112,39): error C2001: 定数が 2 行目に続いています。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(62,20): error C3688: リテラル サフィックス '逕ｷ諤ｧ縺ｮ繧医≧縺ｪ莠ｺ蠖ｱ縺梧丐縺｣縺ｦ縺・ｋ' が無効です。リテラル演算子またはリテラル演算子テンプレート 'operator ""逕ｷ諤ｧ縺ｮ繧医≧縺ｪ莠ｺ蠖ｱ縺梧丐縺｣縺ｦ縺・ｋ' が見つかりません
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(63,17): error C2146: 構文エラー: ')' が、識別子 'AREA1_START' の前に必要です。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(63,97): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(65,15): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(65,15): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(66,88): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(69,17): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(69,17): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(70,102): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(72,17): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(72,17): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(73,92): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(76,19): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(76,19): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(77,101): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(80,21): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(80,21): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(81,101): error C2059: 構文エラー: ','
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(83,21): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(83,21): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(85,9): error C2059: 構文エラー: '}'
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(85,9): error C2143: 構文エラー: ';' が '}' の前にありません。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(86,5): error C2059: 構文エラー: '}'
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(86,5): error C2143: 構文エラー: ';' が '}' の前にありません。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(89,65): error C2143: 構文エラー: ';' が '{' の前にありません。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(89,65): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\MapData.h(113,9): error C2146: 構文エラー: ';' が、識別子 'default' の前に必要です。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Application.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ProjectConfig.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+  TitleScene.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\Title\TitleScene.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\Title\TitleScene.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/Title/TitleScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/Title/TitleScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ResourceManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/Title/TitleScene.cpp' をコンパイルしています)
+  
+  Application.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Application.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/Application.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ProjectConfig.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/Application.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\SceneManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/Application.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/Application.cpp' をコンパイルしています)
+  
+  Collision.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Collision.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Collision.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/Collision.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/Collision.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Collision.cpp(20,8): warning C4101: 'side': ローカル変数は 1 度も使われていません。
+  DialogueSystem.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/DialogueSystem.cpp' をコンパイルしています)
+  
+  InputManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/InputManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(25,33): warning C4244: '引数': 'short' から 'unsigned char' への変換です。データが失われる可能性があります。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(26,33): warning C4244: '引数': 'short' から 'unsigned char' への変換です。データが失われる可能性があります。
   ItemManager.cpp
 C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ItemManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
   (ソース ファイル 'Utility/ItemManager.cpp' をコンパイルしています)
@@ -22,78 +672,53 @@ C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ItemManager.h(1,1): warning C4819: �
 C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
   (ソース ファイル 'Utility/ItemManager.cpp' をコンパイルしています)
   
-  Item.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Objects/Item.cpp' をコンパイルしています)
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/ItemManager.cpp' をコンパイルしています)
   
-  Floor.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Floor.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  Player.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  NPCManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/NPCManager.cpp' をコンパイルしています)
   
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\NPC.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/NPCManager.cpp' をコンパイルしています)
   
-  InGameScene.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Suspect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/NPCManager.cpp' をコンパイルしています)
   
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ItemManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/NPCManager.cpp' をコンパイルしています)
   
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
-  
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(473,52): warning C4244: '引数': 'const float' から 'int' への変換です。データが失われる可能性があります。
-  SceneManager.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\SceneManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
-  
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
-  
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ItemManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
-  
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
-  
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Application.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
-  
-  TitleScene.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\Title\TitleScene.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  HelpScene.cpp
-  Application.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Application.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Utility/Application.cpp' をコンパイルしています)
-  
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\SceneManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Utility/Application.cpp' をコンパイルしています)
-  
-  Collision.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Collision.cpp(20,8): warning C4101: 'side': ローカル変数は 1 度も使われていません。
-  InputManager.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(25,33): warning C4244: '引数': 'short' から 'unsigned char' への変換です。データが失われる可能性があります。
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(26,33): warning C4244: '引数': 'short' から 'unsigned char' への変換です。データが失われる可能性があります。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(194,13): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(195,5): error C2143: 構文エラー: ')' が '}' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(195,5): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(198,13): error C2001: 定数が 2 行目に続いています。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(199,5): error C2143: 構文エラー: ')' が '}' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(199,5): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(208,21): warning C4244: '初期化中': '__int64' から 'int' への変換です。データが失われる可能性があります。
   ProjectConfig.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ProjectConfig.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ProjectConfig.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/ProjectConfig.cpp' をコンパイルしています)
+  
   ReasoningManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/ReasoningManager.cpp' をコンパイルしています)
+  
 C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ChoiceEffect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
   (ソース ファイル 'Utility/ReasoningManager.cpp' をコンパイルしています)
   
-  ReasoningUI.cpp
-C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ChoiceEffect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Utility/ReasoningUI.cpp' をコンパイルしています)
+  ResourceManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ResourceManager.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ResourceManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/ResourceManager.cpp' をコンパイルしています)
+  
+  Vector2D.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Vector2D.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/Vector2D.cpp' をコンパイルしています)
   
   コードを生成中...
 C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(72): warning C4715: 'InputManager::GetButtonState': 値を返さないコントロール パスがあります。
 C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(91): warning C4172: ローカル変数またはテンポラリのアドレスを返します
 C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(96): warning C4172: ローカル変数またはテンポラリのアドレスを返します
-  コンパイル中...
-  ResourceManager.cpp
-  Vector2D.cpp
-  コードを生成中...
-  LINK : 前回のインクリメンタル リンクで C:\PG\2025\GFF_Arata\GFF\GFF_Arata\x64\Debug\GFF_Arata.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
-  GFF_Arata.vcxproj -> C:\PG\2025\GFF_Arata\GFF\GFF_Arata\x64\Debug\GFF_Arata.exe

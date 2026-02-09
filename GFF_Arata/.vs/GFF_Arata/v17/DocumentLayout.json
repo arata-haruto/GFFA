@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Objects\\Floor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Objects\\Floor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ProjectConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ProjectConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ReasoningManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1ABC3C1-E0DC-4C97-B29F-7908A3D7C19E}|GFF_Arata.vcxproj|solutionrelative:Utility\\ReasoningManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -55,19 +67,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Floor.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Objects\\Floor.h",
+              "RelativeDocumentMoniker": "Objects\\Floor.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Objects\\Floor.h",
+              "RelativeToolTip": "Objects\\Floor.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-09T05:34:21.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectConfig.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ProjectConfig.h",
+              "RelativeDocumentMoniker": "Utility\\ProjectConfig.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ProjectConfig.h",
+              "RelativeToolTip": "Utility\\ProjectConfig.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-09T05:34:20.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResourceManager.h",
+              "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ResourceManager.h",
+              "RelativeDocumentMoniker": "Utility\\ResourceManager.h",
+              "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ResourceManager.h",
+              "RelativeToolTip": "Utility\\ResourceManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-09T05:34:19.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ReasoningManager.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ReasoningManager.cpp",
               "RelativeDocumentMoniker": "Utility\\ReasoningManager.cpp",
               "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ReasoningManager.cpp",
               "RelativeToolTip": "Utility\\ReasoningManager.cpp",
-              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIBAAAAAAAAAAAAAAIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-09T02:32:22.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "InputManager.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\InputManager.cpp",
               "RelativeDocumentMoniker": "Utility\\InputManager.cpp",
@@ -75,12 +126,11 @@
               "RelativeToolTip": "Utility\\InputManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-09T02:19:59.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-09T02:19:59.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "InGameScene.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Scene\\InGame\\InGameScene.cpp",
               "RelativeDocumentMoniker": "Scene\\InGame\\InGameScene.cpp",
@@ -92,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "NPC.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Objects\\NPC.cpp",
               "RelativeDocumentMoniker": "Objects\\NPC.cpp",
@@ -100,12 +150,11 @@
               "RelativeToolTip": "Objects\\NPC.cpp",
               "ViewState": "AgIAAHsAAAAAAAAAAAAAAEsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-22T04:26:24.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-22T04:26:24.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ChoiceEffect.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ChoiceEffect.cpp",
               "RelativeDocumentMoniker": "Utility\\ChoiceEffect.cpp",
@@ -117,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "TitleScene.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Scene\\Title\\TitleScene.cpp",
               "RelativeDocumentMoniker": "Scene\\Title\\TitleScene.cpp",
@@ -125,12 +174,11 @@
               "RelativeToolTip": "Scene\\Title\\TitleScene.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-05T02:58:32.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T02:58:32.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Item.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Objects\\Item.cpp",
               "RelativeDocumentMoniker": "Objects\\Item.cpp",
@@ -142,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "SceneManager.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Scene\\SceneManager.cpp",
               "RelativeDocumentMoniker": "Scene\\SceneManager.cpp",
@@ -154,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Floor.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Objects\\Floor.cpp",
               "RelativeDocumentMoniker": "Objects\\Floor.cpp",
@@ -166,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Application.cpp",
               "DocumentMoniker": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\Application.cpp",
               "RelativeDocumentMoniker": "Utility\\Application.cpp",

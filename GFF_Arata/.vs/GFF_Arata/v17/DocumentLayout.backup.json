@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "Utility\\ReasoningManager.cpp",
               "ToolTip": "C:\\PG\\2025\\GFF_Arata\\GFF\\GFF_Arata\\Utility\\ReasoningManager.cpp",
               "RelativeToolTip": "Utility\\ReasoningManager.cpp",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-09T02:32:22.443Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Utility\\InputManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-09T02:19:59.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-09T02:19:59.235Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "Objects\\NPC.cpp",
               "ViewState": "AgIAAHsAAAAAAAAAAAAAAEsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-22T04:26:24.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-22T04:26:24.955Z"
             },
             {
               "$type": "Document",
@@ -125,8 +123,7 @@
               "RelativeToolTip": "Scene\\Title\\TitleScene.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-05T02:58:32.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T02:58:32.549Z"
             },
             {
               "$type": "Document",
