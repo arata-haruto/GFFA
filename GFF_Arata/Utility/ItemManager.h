@@ -15,9 +15,10 @@ private:
     bool isListOpen;  // アイテムリストが開いているか
     ItemMode mode;
     int selectedIndex;
-    float inputCooldown;  // 入力クールダウンタイマー
+
+    void DrawPixelArtBox(int x, int y, int width, int height) const;
+
 public:
-    ItemManager() : isListOpen(false), mode(ItemMode::List), selectedIndex(0), inputCooldown(0.0f) {}
     ~ItemManager();
 
     void Add(Item* item);
@@ -25,8 +26,14 @@ public:
     void Update(float playerX, float playerY, float deltaTime);
     void Draw(float cameraOffsetX = 0.0f) const;
     void ToggleList();  // アイテムリストの開閉
-    std::vector<std::string> GetCollectedItems() const;  // 収集されたアイテム名のリストを取得
-    int GetCollectedCount() const;  // 収集されたアイテム数を取得
-    int GetTotalCount() const { return (int)items.size(); }  // 全アイテム数を取得
 
+    // ゲッター
+    std::vector<std::string> GetCollectedItems() const;
+    int GetCollectedCount() const;
+    int GetTotalCount() const { return (int)items.size(); }
+    const std::vector<Item*>& GetItems() const { return items; }
+
+    const Item* GetSelectedItem() const;
+
+    bool IsOpen() const { return isListOpen; }
 };

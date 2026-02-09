@@ -8,11 +8,11 @@
 
 void InputManager::Update()
 {
-	//ƒL[“ü—Í‚ÌXV
+	//ã‚­ãƒ¼å…¥åŠ›ã®æ›´æ–°
 	memcpy(old_key, now_key, (sizeof(char) * D_KEYCODE_MAX));
 	GetHitKeyStateAll(now_key);
 
-	//ƒRƒ“ƒgƒ[ƒ‰[“ü—Í’l‚ÌXV
+	//ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©ãƒ¼å…¥åŠ›å€¤ã®æ›´æ–°
 	XINPUT_STATE input = {};
 	GetJoypadXInputState(DX_INPUT_PAD1, &input);
 	for (int i = 0; i < D_BUTTON_MAX; i++)
@@ -29,19 +29,19 @@ void InputManager::Update()
 eInputState InputManager::GetKeyState(int key_code) const
 {
 
-	//ƒL[‚ª‰Ÿ‚³‚ê‚½uŠÔ‚©
+	//ã‚­ãƒ¼ãŒæŠ¼ã•ã‚ŒãŸç¬é–“ã‹
 	if (CheckKeycodeRange(key_code) && (now_key[key_code] == TRUE && old_key[key_code] == FALSE))
 	{
 		return eInputState::Pressed;
 	}
 
-	//ƒL[‚ª‰Ÿ‚³‚ê‚Ä‚¢‚½‚ç
+	//ã‚­ãƒ¼ãŒæŠ¼ã•ã‚Œã¦ã„ãŸã‚‰
 	if (CheckKeycodeRange(key_code) && (now_key[key_code] == TRUE && old_key[key_code] == TRUE))
 	{
 		return eInputState::Held;
 	}
 
-	//ƒL[‚ª—£‚³‚ê‚½uŠÔ‚©
+	//ã‚­ãƒ¼ãŒé›¢ã•ã‚ŒãŸç¬é–“ã‹
 	if (CheckKeycodeRange(key_code) && (now_key[key_code] == FALSE && old_key[key_code] == TRUE))
 	{
 		return eInputState::Release;
@@ -52,19 +52,19 @@ eInputState InputManager::GetKeyState(int key_code) const
 
 eInputState InputManager::GetButtonState(int button) const
 {
-	//ƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚Ä‚¢‚é‚©
+	//ãƒœã‚¿ãƒ³ãŒæŠ¼ã•ã‚Œã¦ã„ã‚‹ã‹
 	if (CheckButtonRange(button) && (now_button[button] && old_button[button]))
 	{
 		return eInputState::Held;
 	}
 
-	//ƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½uŠÔ‚©
+	//ãƒœã‚¿ãƒ³ãŒæŠ¼ã•ã‚ŒãŸç¬é–“ã‹
 	if (CheckButtonRange(button) && (now_button[button] && !old_button[button]))
 	{
 		return eInputState::Pressed;
 	}
 
-	//ƒ{ƒ^ƒ“‚ª—£‚³‚ê‚½uŠÔ‚©
+	//ãƒœã‚¿ãƒ³ãŒé›¢ã•ã‚ŒãŸç¬é–“ã‹
 	if (CheckButtonRange(button) && (!now_button[button] && old_button[button]))
 	{
 		return eInputState::Release;

@@ -7,10 +7,10 @@
 class NPCManager {
 private:
     std::vector<std::unique_ptr<NPC>> npcs;
-    NPC* currentTalkingNPC;             // Œ»İ‰ï˜b’†‚ÌNPC
-    bool isDialogueActive;              // ƒ_ƒCƒAƒƒO•\¦’†‚©
+    NPC* currentTalkingNPC;             // ç¾åœ¨ä¼šè©±ä¸­ã®NPC
+    bool isDialogueActive;              // ãƒ€ã‚¤ã‚¢ãƒ­ã‚°è¡¨ç¤ºä¸­ã‹
 
-    // ƒ_ƒCƒAƒƒOUI
+    // ãƒ€ã‚¤ã‚¢ãƒ­ã‚°UI
     int dialogueBoxHandle;
     float dialogueTimer;
 
@@ -22,19 +22,19 @@ public:
     void Update(float playerX, float playerY, float deltaTime);
     void Draw(float cameraOffsetX = 0.0f) const;
 
-    // NPC’Ç‰Á
+    // NPCè¿½åŠ 
     void AddSuspect(SuspectType type, float x, float y);
     void AddNPC(NPC* npc);
 
-    // ‰ï˜bƒVƒXƒeƒ€
+    // ä¼šè©±ã‚·ã‚¹ãƒ†ãƒ 
     void StartDialogue(NPC* npc);
     void EndDialogue();
     void NextDialogue();
     bool IsDialogueActive() const { return isDialogueActive; }
 
-    // ƒ_ƒCƒAƒƒO•`‰æ
+    // ãƒ€ã‚¤ã‚¢ãƒ­ã‚°æç”»
     void DrawDialogue() const;
 
-    // ƒQƒbƒ^[
+    // ã‚²ãƒƒã‚¿ãƒ¼
     const std::vector<std::unique_ptr<NPC>>& GetAllNPCs() const { return npcs; }
 };

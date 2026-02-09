@@ -25,7 +25,6 @@ void TitleScene::Initialize()
 	pickup_color = GetColor(255, 0, 0);
 	dropoff_color = GetColor(255, 255, 255);
 
-	// カーソル・決定音の初期化 (コメントアウトされている場合も安全のために初期化)
 	cursor_sound = -1;
 	decision_sound = -1;
 
@@ -100,7 +99,7 @@ void TitleScene::Draw() const
 	}
 
 	// タイトルロゴの描画
-	DrawFormatString(100, 100, GetColor(255, 255, 255), "タイトル画面");
+	//DrawFormatString(100, 100, GetColor(255, 255, 255), "タイトル画面");
 
 	// メニューの描画
 	if (menu_font_handle != -1) {

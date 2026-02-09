@@ -26,7 +26,7 @@ public:
 	int dropoff_color;
 	int num_image;
 	int string_image[26];
-	int back_ground_image;	//”wŒi‰æ‘œ
+	int back_ground_image;	//èƒŒæ™¯ç”»åƒ
 	int TitleDoll_image;
 	eSelectMenu select_menu;
 

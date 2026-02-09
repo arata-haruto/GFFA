@@ -3,7 +3,7 @@
 
 bool Collision::IsCheckHitTarget(eObjectType object_type) const
 {
-	// “K—p‚·‚éƒIƒuƒWƒFƒNƒgƒ^ƒCƒv‚È‚çAtrue
+	// é©ç”¨ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚¿ã‚¤ãƒ—ãªã‚‰ã€true
 	for (eObjectType type : hit_object_type)
 	{
 		if (type == object_type)
@@ -48,13 +48,13 @@ bool Collision::IsCheckHitCollision(Collision target1, Collision target2)
 	}
 
 	return false;
-	////target1‚Ì‹éŒ`“–‚½‚è”»’è‚Ì•Ó‚ÌÀ•W
+	////target1ã®çŸ©å½¢å½“ãŸã‚Šåˆ¤å®šã®è¾ºã®åº§æ¨™
 	//side[0][UP] = tg1.y - (target1.box_size.y / 2);
 	//side[0][RIGHT] = tg1.x + (target1.box_size.x / 2);
 	//side[0][DOWN] = tg1.y + (target1.box_size.y / 2);
 	//side[0][LEFT] = tg1.x - (target1.box_size.x / 2);
 
-	////target2‚Ì‹éŒ`“–‚½‚è”»’è‚Ì•Ó‚ÌÀ•W
+	////target2ã®çŸ©å½¢å½“ãŸã‚Šåˆ¤å®šã®è¾ºã®åº§æ¨™
 	//side[1][UP] = tg2.y - (target1.box_size.y / 2);
 	//side[1][RIGHT] = tg2.x + (target1.box_size.x / 2);
 	//side[1][DOWN] = tg2.y + (target1.box_size.y / 2);

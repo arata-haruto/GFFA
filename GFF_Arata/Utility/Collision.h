@@ -2,7 +2,7 @@
 #include "Vector2D.h"
 #include <vector>
 
-//ƒIƒuƒWƒFƒNƒg‚Ìƒ^ƒCƒv
+//ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚¿ã‚¤ãƒ—
 enum eObjectType
 {
 	eNone,

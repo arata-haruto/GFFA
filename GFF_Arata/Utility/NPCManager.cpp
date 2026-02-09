@@ -18,20 +18,20 @@ NPCManager::~NPCManager() {
 void NPCManager::Initialize() {
     npcs.clear();
 
-    // —e‹^ŽÒ”z’uiŽw’è‚ÌÀ•W‚É”z’uj
-    // — ŒûƒGƒŠƒA - “¡è”üç
+    // å®¹ç–‘è€…é…ç½®ï¼ˆæŒ‡å®šã®åº§æ¨™ã«é…ç½®ï¼‰
+    // è£å£ã‚¨ãƒªã‚¢ - è—¤å´Žç¾Žå’²
     AddSuspect(SuspectType::Fujisaki, 600.0f, 560.0f);
 
-    // “X“à‰œƒGƒŠƒA - –Ø‘º’B–çi”Ælj
-    AddSuspect(SuspectType::Kimura, 1500.0f, 560.0f);
+    // åº—å†…å¥¥ã‚¨ãƒªã‚¢ - æœ¨æ‘é”ä¹Ÿï¼ˆçŠ¯äººï¼‰
+    AddSuspect(SuspectType::Kimura, 3200.0f, 560.0f);
 
-    // ƒŒƒWŽü•ÓƒGƒŠƒA - ²X–ØŒ’‘¾
-    AddSuspect(SuspectType::Sasaki, 2300.0f, 560.0f);
+    // ãƒ¬ã‚¸å‘¨è¾ºã‚¨ãƒªã‚¢ - ä½ã€…æœ¨å¥å¤ª
+    AddSuspect(SuspectType::Sasaki, 6400.0f, 560.0f);
 
-    // “XŠOƒGƒŠƒA - ŽR“cˆê˜Y
-    AddSuspect(SuspectType::Yamada, 3500.0f, 560.0f);
+    // åº—å¤–ã‚¨ãƒªã‚¢ - å±±ç”°ä¸€éƒŽ
+    AddSuspect(SuspectType::Yamada, 8600.0f, 560.0f);
 
-    // ŠeNPC‚Ì‰Šú‰»
+    // å„NPCã®åˆæœŸåŒ–
     for (auto& npc : npcs) {
         npc->Initialize();
     }
@@ -40,11 +40,11 @@ void NPCManager::Initialize() {
 void NPCManager::Update(float playerX, float playerY, float deltaTime) {
     InputManager* input = InputManager::GetInstance();
 
-    // ƒ_ƒCƒAƒƒO•\Ž¦’†‚Ìˆ—
+    // ãƒ€ã‚¤ã‚¢ãƒ­ã‚°è¡¨ç¤ºä¸­ã®å‡¦ç†
     if (isDialogueActive) {
         dialogueTimer += deltaTime;
 
-        // ZƒL[‚ÅŽŸ‚ÌØŒ¾‚Ö
+        // Zã‚­ãƒ¼ã§æ¬¡ã®è¨¼è¨€ã¸
         if (input->GetKeyState(KEY_INPUT_Z) == eInputState::Pressed ||
             input->GetButtonState(XINPUT_BUTTON_A) == eInputState::Pressed) {
 
@@ -57,36 +57,36 @@ void NPCManager::Update(float playerX, float playerY, float deltaTime) {
             }
         }
 
-        // XƒL[‚Å‰ï˜bI—¹
+        // Xã‚­ãƒ¼ã§ä¼šè©±çµ‚äº†
         if (input->GetKeyState(KEY_INPUT_X) == eInputState::Pressed ||
             input->GetButtonState(XINPUT_BUTTON_B) == eInputState::Pressed) {
             EndDialogue();
         }
 
-        return;  // ƒ_ƒCƒAƒƒO’†‚Í‘¼‚Ìˆ—‚ðƒXƒLƒbƒv
+        return;  // ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ä¸­ã¯ä»–ã®å‡¦ç†ã‚’ã‚¹ã‚­ãƒƒãƒ—
     }
 
-    // ŠeNPC‚ÌXV
+    // å„NPCã®æ›´æ–°
     for (auto& npc : npcs) {
         npc->Update(playerX, playerY, deltaTime);
 
-        // ZƒL[‚Å‰ï˜bŠJŽn
-        if (npc->IsInteracting() &&
+        // Zã‚­ãƒ¼ã§ä¼šè©±é–‹å§‹
+       /* if (npc->IsInteracting() &&
             (input->GetKeyState(KEY_INPUT_Z) == eInputState::Pressed ||
                 input->GetButtonState(XINPUT_BUTTON_A) == eInputState::Pressed)) {
             StartDialogue(npc.get());
             break;
-        }
+        }*/
     }
 }
 
 void NPCManager::Draw(float cameraOffsetX) const {
-    // ŠeNPC‚Ì•`‰æ
+    // å„NPCã®æç”»
     for (const auto& npc : npcs) {
         npc->Draw(cameraOffsetX);
     }
 
-    // ƒ_ƒCƒAƒƒO•`‰æ
+    // ãƒ€ã‚¤ã‚¢ãƒ­ã‚°æç”»
     if (isDialogueActive) {
         DrawDialogue();
     }
@@ -132,25 +132,25 @@ void NPCManager::DrawDialogue() const {
     const Testimony* testimony = currentTalkingNPC->GetCurrentTestimony();
     if (!testimony) return;
 
-    // ƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚Ì•`‰æ
+    // ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ã®æç”»
     int boxX = 100;
     int boxY = 450;
     int boxWidth = 1080;
     int boxHeight = 220;
 
-    // ”wŒi
+    // èƒŒæ™¯
     SetDrawBlendMode(DX_BLENDMODE_ALPHA, 230);
     DrawBox(boxX, boxY, boxX + boxWidth, boxY + boxHeight,
         GetColor(20, 20, 40), TRUE);
     SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 
-    // ˜g
+    // æž 
     DrawBox(boxX, boxY, boxX + boxWidth, boxY + boxHeight,
         GetColor(200, 200, 200), FALSE);
     DrawBox(boxX + 2, boxY + 2, boxX + boxWidth - 2, boxY + boxHeight - 2,
         GetColor(150, 150, 150), FALSE);
 
-    // –¼‘O•\Ž¦
+    // åå‰è¡¨ç¤º
     DrawBox(boxX + 20, boxY - 30, boxX + 200, boxY,
         GetColor(40, 40, 80), TRUE);
     DrawBox(boxX + 20, boxY - 30, boxX + 200, boxY,
@@ -159,16 +159,16 @@ void NPCManager::DrawDialogue() const {
     DrawFormatString(boxX + 40, boxY - 23, GetColor(255, 255, 255),
         "%s", currentTalkingNPC->GetName().c_str());
 
-    // ØŒ¾“à—e
+    // è¨¼è¨€å†…å®¹
     SetFontSize(20);
     int textX = boxX + 30;
     int textY = boxY + 30;
 
-    // d—v‚ÈØŒ¾‚ÍF‚ð•Ï‚¦‚é
+    // é‡è¦ãªè¨¼è¨€ã¯è‰²ã‚’å¤‰ãˆã‚‹
     unsigned int textColor = testimony->isImportant ?
         GetColor(255, 255, 100) : GetColor(255, 255, 255);
 
-    // ‰üs‘Î‰žiŠÈˆÕ”ÅF\n‚Å‰üsj
+    // æ”¹è¡Œå¯¾å¿œï¼ˆç°¡æ˜“ç‰ˆï¼š\nã§æ”¹è¡Œï¼‰
     std::string text = testimony->text;
     size_t pos = 0;
     int lineHeight = 30;
@@ -186,25 +186,25 @@ void NPCManager::DrawDialogue() const {
 
     SetFontSize(16);
 
-    // ‘€ìà–¾
+    // æ“ä½œèª¬æ˜Ž
     int guideY = boxY + boxHeight - 35;
 
     if (currentTalkingNPC->HasMoreTestimonies()) {
         DrawFormatString(boxX + 30, guideY, GetColor(200, 200, 200),
-            "[Z] ŽŸ‚Ö  [X] I—¹");
+            "[A] æ¬¡ã¸  [B] çµ‚äº†");
     }
     else {
         DrawFormatString(boxX + 30, guideY, GetColor(200, 200, 200),
-            "[Z] ‚Ü‚½‚Í [X] ‚ÅI—¹");
+            "[A] ã¾ãŸã¯ [B] ã§çµ‚äº†");
     }
 
-    // Ø‹’‚ª•K—v‚Èê‡‚Ì•\Ž¦
+    // è¨¼æ‹ ãŒå¿…è¦ãªå ´åˆã®è¡¨ç¤º
     if (testimony->requiresEvidence && !testimony->requiredEvidence.empty()) {
         DrawFormatString(boxX + boxWidth - 300, guideY, GetColor(255, 100, 100),
-            "¦ —vØ‹’: %s", testimony->requiredEvidence.c_str());
+            "â€» è¦è¨¼æ‹ : %s", testimony->requiredEvidence.c_str());
     }
 
-    // ƒy[ƒWƒCƒ“ƒWƒP[ƒ^[
+    // ãƒšãƒ¼ã‚¸ã‚¤ãƒ³ã‚¸ã‚±ãƒ¼ã‚¿ãƒ¼
     int currentPage = currentTalkingNPC->GetCurrentTestimony() -
         &(*currentTalkingNPC->GetAllTestimonies().begin());
     int totalPages = (int)currentTalkingNPC->GetAllTestimonies().size();
