@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Utility\DialogueSystem.h" />
     <ClInclude Include="Utility\NPCManager.h" />
     <ClInclude Include="Objects\NPC.h" />
     <ClInclude Include="Scene\InGame\MapData.h" />
@@ -140,12 +141,12 @@
     <ClInclude Include="Objects\Item.h" />
     <ClInclude Include="Objects\Floor.h" />
     <ClInclude Include="Objects\Player.h" />
-    <ClInclude Include="Scene\GameMain.h" />
     <ClInclude Include="Scene\InGame\InGameScene.h" />
     <ClInclude Include="Scene\SceneBase.h" />
     <ClInclude Include="Scene\SceneFactory.h" />
     <ClInclude Include="Scene\SceneManager.h" />
     <ClInclude Include="Scene\Title\TitleScene.h" />
+    <ClInclude Include="Scene\Help\HelpScene.h" />
     <ClInclude Include="Utility\Application.h" />
     <ClInclude Include="Utility\Collision.h" />
     <ClInclude Include="Utility\InputManager.h" />
@@ -158,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AppMain.cpp" />
+    <ClCompile Include="Utility\DialogueSystem.cpp" />
     <ClCompile Include="Utility\NPCManager.cpp" />
     <ClCompile Include="Objects\NPC.cpp" />
     <ClCompile Include="Objects\Suspect.cpp" />
@@ -166,10 +168,10 @@
     <ClCompile Include="Objects\Item.cpp" />
     <ClCompile Include="Objects\Floor.cpp" />
     <ClCompile Include="Objects\Player.cpp" />
-    <ClCompile Include="Scene\GameMain.cpp" />
     <ClCompile Include="Scene\InGame\InGameScene.cpp" />
     <ClCompile Include="Scene\SceneManager.cpp" />
     <ClCompile Include="Scene\Title\TitleScene.cpp" />
+    <ClCompile Include="Scene\Help\HelpScene.cpp" />
     <ClCompile Include="Utility\Application.cpp" />
     <ClCompile Include="Utility\Collision.cpp" />
     <ClCompile Include="Utility\InputManager.cpp" />

@@ -1,2 +1,99 @@
-﻿  Player.cpp
-  GFF_Arata.vcxproj -> C:\PG\2025\GFF_Arata\GFF_Arata\x64\Debug\GFF_Arata.exe
+﻿  AppMain.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Application.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'AppMain.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\SceneManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'AppMain.cpp' をコンパイルしています)
+  
+  DialogueSystem.cpp
+  NPCManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\NPCManager.cpp(208,21): warning C4244: '初期化中': '__int64' から 'int' への変換です。データが失われる可能性があります。
+  NPC.cpp
+  Suspect.cpp
+  ChoiceEffect.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ChoiceEffect.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ChoiceEffect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/ChoiceEffect.cpp' をコンパイルしています)
+  
+  ItemManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ItemManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/ItemManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/ItemManager.cpp' をコンパイルしています)
+  
+  Item.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Item.cpp' をコンパイルしています)
+  
+  Floor.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Floor.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  Player.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Objects/Player.cpp' をコンパイルしています)
+  
+  InGameScene.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ItemManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/InGame/InGameScene.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\InGame\InGameScene.cpp(473,52): warning C4244: '引数': 'const float' から 'int' への変換です。データが失われる可能性があります。
+  SceneManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\SceneManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Player.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ItemManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Objects\Item.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Application.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Scene/SceneManager.cpp' をコンパイルしています)
+  
+  TitleScene.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\Title\TitleScene.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  HelpScene.cpp
+  Application.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Application.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/Application.cpp' をコンパイルしています)
+  
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Scene\SceneManager.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/Application.cpp' をコンパイルしています)
+  
+  Collision.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\Collision.cpp(20,8): warning C4101: 'side': ローカル変数は 1 度も使われていません。
+  InputManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(25,33): warning C4244: '引数': 'short' から 'unsigned char' への変換です。データが失われる可能性があります。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(26,33): warning C4244: '引数': 'short' から 'unsigned char' への変換です。データが失われる可能性があります。
+  ProjectConfig.cpp
+  ReasoningManager.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ChoiceEffect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/ReasoningManager.cpp' をコンパイルしています)
+  
+  ReasoningUI.cpp
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\ChoiceEffect.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Utility/ReasoningUI.cpp' をコンパイルしています)
+  
+  コードを生成中...
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(72): warning C4715: 'InputManager::GetButtonState': 値を返さないコントロール パスがあります。
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(91): warning C4172: ローカル変数またはテンポラリのアドレスを返します
+C:\PG\2025\GFF_Arata\GFF\GFF_Arata\Utility\InputManager.cpp(96): warning C4172: ローカル変数またはテンポラリのアドレスを返します
+  コンパイル中...
+  ResourceManager.cpp
+  Vector2D.cpp
+  コードを生成中...
+  LINK : 前回のインクリメンタル リンクで C:\PG\2025\GFF_Arata\GFF\GFF_Arata\x64\Debug\GFF_Arata.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+  GFF_Arata.vcxproj -> C:\PG\2025\GFF_Arata\GFF\GFF_Arata\x64\Debug\GFF_Arata.exe
