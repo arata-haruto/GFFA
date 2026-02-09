@@ -1,4 +1,4 @@
-#include "SceneManager.h"
+ï»¿#include "SceneManager.h"
 #include "SceneFactory.h"
 #include "../Utility/Application.h"
 #include "../Utility/InputManager.h"
@@ -22,14 +22,14 @@ bool SceneManager::Update(float delta_second)
 
 	eSceneType next_scene = current_scene->Update(delta_second);
 
-	// ‰æ–Ê‚Ì‰Šú‰»
+	// ç”»é¢ã®åˆæœŸåŒ–
 	ClearDrawScreen();
-	// ƒV[ƒ“‚Ì•`‰æˆ—
+	// ã‚·ãƒ¼ãƒ³ã®æç”»å‡¦ç†
 	current_scene->Draw();
-	// — ‰æ–Ê‚Ì“à—e‚ğ•\‰æ–Ê‚É”½‰f‚·‚é
+	// è£ç”»é¢ã®å†…å®¹ã‚’è¡¨ç”»é¢ã«åæ˜ ã™ã‚‹
 	ScreenFlip();
 
-	// ƒQ[ƒ€‚ğI—¹‚·‚é‚©Šm”F‚·‚é
+	// ã‚²ãƒ¼ãƒ ã‚’çµ‚äº†ã™ã‚‹ã‹ç¢ºèªã™ã‚‹
 	if ((next_scene == eSceneType::eExit) ||
 		(eInputState::Release == input->GetButtonState(XINPUT_BUTTON_BACK)) ||
 		(eInputState::Release == input->GetKeyState(KEY_INPUT_ESCAPE)))
@@ -58,26 +58,26 @@ void SceneManager::Finalize()
 
 bool SceneManager::ChangeScene(enum eSceneType type)
 {
-	//V‚µ‚¢ƒV[ƒ“‚ğì¬‚·‚é
+	//æ–°ã—ã„ã‚·ãƒ¼ãƒ³ã‚’ä½œæˆã™ã‚‹
 	SceneBase* next_scene = SceneFactory::CreateScene(type);
 
-	//ƒGƒ‰[ƒ`ƒFƒbƒN
+	//ã‚¨ãƒ©ãƒ¼ãƒã‚§ãƒƒã‚¯
 	if (next_scene == nullptr)
 	{
-		throw("ƒV[ƒ“¶¬‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½\n");
+		throw("ã‚·ãƒ¼ãƒ³ç”Ÿæˆã§ãã¾ã›ã‚“ã§ã—ãŸ\n");
 		return false;
 	}
 
-	//•ÏX‘OƒV[ƒ“‚ÌI—¹ˆ—
+	//å¤‰æ›´å‰ã‚·ãƒ¼ãƒ³ã®çµ‚äº†å‡¦ç†
 	if (current_scene != nullptr)
 	{
 		current_scene->Finalize();
 		delete current_scene;
 	}
 
-	//V‚µ‚¢ƒV[ƒ“‚Ì‰Šú‰»ˆ—
+	//æ–°ã—ã„ã‚·ãƒ¼ãƒ³ã®åˆæœŸåŒ–å‡¦ç†
 	next_scene->Initialize();
-	//ƒV[ƒ“‚Ìã‘‚«
+	//ã‚·ãƒ¼ãƒ³ã®ä¸Šæ›¸ã
 	current_scene = next_scene;
 
 	return true;

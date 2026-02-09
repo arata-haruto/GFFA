@@ -1,128 +1,124 @@
 #pragma once
 #include <string>
 #include <vector>
-#include "../../Objects/Item.h" // MiniGameType‚Ì‚½‚ß‚ÉƒCƒ“ƒNƒ‹[ƒh
+#include "../../Objects/Item.h"
 
-// ƒGƒŠƒA’è‹`
+// ã‚¨ãƒªã‚¢å®šç¾©
 enum class MapArea {
-    BackDoor,      // — Œû (0-800px)
-    StoreInner,    // “X“à‰œ (800-1600px)
-    CashRegister,  // ƒŒƒWü•Ó (1600-2400px)
-    StoreFront,    // “X“ª (2400-3200px)
-    Outside        // “XŠO (3200-4000px)
+    BackDoor,      // è£å£
+    StoreInner,    // åº—å†…å¥¥
+    CashRegister,  // ãƒ¬ã‚¸å‘¨è¾º
+    StoreFront,    // åº—é ­
+    Outside        // åº—å¤–
 };
 
-// Ø‹’ƒf[ƒ^\‘¢‘Ì
+// è¨¼æ‹ ãƒ‡ãƒ¼ã‚¿æ§‹é€ ä½“
 struct EvidenceData {
-    int id;                          // Ø‹’ID
-    std::string name;                // Ø‹’–¼
-    std::string description;         // à–¾
-    float x;                         // XÀ•W
-    float y;                         // YÀ•W
-    MiniGameType gameType;           // ƒ~ƒjƒQ[ƒ€ƒ^ƒCƒv
-    MapArea area;                    // Š‘®ƒGƒŠƒA
+    int id;
+    std::string name;
+    std::string description;
+    float x;
+    float y;
+    MiniGameType gameType;
+    MapArea area;
 };
 
-// ”wŒiƒIƒuƒWƒFƒNƒg\‘¢‘Ì
+// èƒŒæ™¯ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæ§‹é€ ä½“
 struct BackgroundObject {
-    std::string type;                // ƒ^ƒCƒviwall, shelf, counter, windowj
-    float x;                         // XÀ•W
-    float y;                         // YÀ•W
-    float width;                     // •
-    float height;                    // ‚‚³
-    std::string imagePath;           // ‰æ‘œƒpƒXiƒIƒvƒVƒ‡ƒ“j
+    std::string type;
+    float x;
+    float y;
+    float width;
+    float height;
+    std::string imagePath;
 };
 
-// ƒ}ƒbƒvƒf[ƒ^ƒNƒ‰ƒX
+// ãƒãƒƒãƒ—ãƒ‡ãƒ¼ã‚¿ã‚¯ãƒ©ã‚¹
 class MapData {
 public:
-    // ƒ}ƒbƒvƒTƒCƒY’è”
-    static const int MAP_WIDTH = 4000;
+    static const int AREA_WIDTH = 800;
+    static const int AREA_GAP = 2000;
+
+    // å„ã‚¨ãƒªã‚¢ã®é–‹å§‹Xåº§æ¨™
+    static const int AREA0_START = 0;
+    static const int AREA1_START = AREA0_START + AREA_WIDTH + AREA_GAP; // 2800
+    static const int AREA2_START = AREA1_START + AREA_WIDTH + AREA_GAP; // 5600
+    static const int AREA3_START = AREA2_START + AREA_WIDTH + AREA_GAP; // 8400
+    static const int AREA4_START = AREA3_START + AREA_WIDTH + AREA_GAP; // 11200
+
+    // ãƒãƒƒãƒ—å…¨ä½“ã®å¹…ï¼ˆè¨ˆç®—ç”¨ï¼‰
+    static const int MAP_WIDTH = AREA4_START + AREA_WIDTH;
+
     static const int MAP_HEIGHT = 720;
     static const int FLOOR_Y = 600;
-    static const int FLOOR_HEIGHT = 120;
 
-    // ƒGƒŠƒA‹«ŠE
-    static const int AREA1_END = 800;
-    static const int AREA2_END = 1600;
-    static const int AREA3_END = 2400;
-    static const int AREA4_END = 3200;
-
-    // Ø‹’ƒf[ƒ^‚ğæ“¾
     static std::vector<EvidenceData> GetEvidenceList() {
         return {
-            // Ø‹’‡@ - ŒŒ‚Ì‚Â‚¢‚½‹à‘®ƒoƒbƒg
-            { 1, "ŒŒ‚Ì‚Â‚¢‚½‹à‘®ƒoƒbƒg", "‹¥Ší‚Æv‚í‚ê‚éBw–ä‚ª•t’…‚µ‚Ä‚¢‚é", 400.0f, 500.0f, MiniGameType::QuickTimeEvent, MapArea::BackDoor },
+            // --- ã‚¨ãƒªã‚¢0: è£å£ (0 ~ 800) ---
+            { 1, "è¡€ã®ã¤ã„ãŸé‡‘å±ãƒãƒƒãƒˆ", "å‡¶å™¨ã¨æ€ã‚ã‚Œã‚‹ã€‚æŒ‡ç´‹ãŒä»˜ç€ã—ã¦ã„ã‚‹",
+              AREA0_START + 200.0f, 500.0f, MiniGameType::QuickTimeEvent, MapArea::BackDoor },
 
-            // Ø‹’‡A - –h”ÆƒJƒƒ‰‚Ì‰f‘œ
-            { 2, "–h”ÆƒJƒƒ‰‚Ì‰f‘œ", "23:15‚É— Œû‚©‚ç“ü‚él‰e‚ª‰f‚Á‚Ä‚¢‚é", 900.0f, 500.0f, MiniGameType::PasswordCrack, MapArea::StoreInner },
+              // --- ã‚¨ãƒªã‚¢1: åº—å†…å¥¥ (2800 ~ 3600) ---
+              { 2, "é˜²çŠ¯ã‚«ãƒ¡ãƒ©ã®æ˜ åƒ", "ç”·æ€§ã®ã‚ˆã†ãªäººå½±ãŒæ˜ ã£ã¦ã„ã‚‹,",
+                AREA1_START + 150.0f, 500.0f, MiniGameType::PasswordCrack, MapArea::StoreInner },
 
-            // Ø‹’‡B - “Xå‚Ìè’ 
-            { 3, "“Xå‚Ìè’ ", "u23:00 ’í‚Æ˜b‚µ‡‚¢v‚Æƒƒ‚‚³‚ê‚Ä‚¢‚é", 1300.0f, 500.0f, MiniGameType::None, MapArea::StoreInner },
+              { 3, "åº—ä¸»ã®æ‰‹å¸³", "ã€Œ23:00 å¼Ÿã¨è©±ã—åˆã„ã€ã¨ãƒ¡ãƒ¢ã•ã‚Œã¦ã„ã‚‹",
+                AREA1_START + 600.0f, 500.0f, MiniGameType::None, MapArea::StoreInner },
 
-            // Ø‹’‡C - ƒŒƒW‚Ì‹L˜^
-            { 4, "ƒŒƒW‚Ì‹L˜^", "23:20‚ªÅŒã‚Ì‰ïŒvBŒ»‹à‚Íc‚Á‚Ä‚¢‚é", 1800.0f, 480.0f, MiniGameType::QuickTimeEvent, MapArea::CashRegister },
+                // --- ã‚¨ãƒªã‚¢2: ãƒ¬ã‚¸å‘¨è¾º (5600 ~ 6400) ---
+                { 4, "ãƒ¬ã‚¸ã®è¨˜éŒ²", "23:20ãŒæœ€å¾Œã®ä¼šè¨ˆã€‚ç¾é‡‘ã¯æ®‹ã£ã¦ã„ã‚‹",
+                  AREA2_START + 200.0f, 480.0f, MiniGameType::QuickTimeEvent, MapArea::CashRegister },
 
-            // Ø‹’‡D - U—‚µ‚½¤•i
-            { 5, "U—‚µ‚½¤•i", "Œƒ‚µ‚¢‘ˆ‚¢‚ª‚ ‚Á‚½Ø‹’", 2100.0f, 520.0f, MiniGameType::None, MapArea::CashRegister },
+                { 5, "æ•£ä¹±ã—ãŸå•†å“", "æ¿€ã—ã„äº‰ã„ãŒã‚ã£ãŸè¨¼æ‹ ",
+                  AREA2_START + 500.0f, 520.0f, MiniGameType::None, MapArea::CashRegister },
 
-            // Ø‹’‡E - Š„‚ê‚½‘‹ƒKƒ‰ƒX
-            { 6, "Š„‚ê‚½‘‹ƒKƒ‰ƒX", "“à‘¤‚©‚çŠ„‚ç‚ê‚Ä‚¢‚éB‹­“‹U‘•‚©H", 2600.0f, 490.0f, MiniGameType::PasswordCrack, MapArea::StoreFront },
+                  // --- ã‚¨ãƒªã‚¢3: åº—é ­ (8400 ~ 9200) ---
+                  { 6, "å‰²ã‚ŒãŸçª“ã‚¬ãƒ©ã‚¹", "å†…å´ã‹ã‚‰å‰²ã‚‰ã‚Œã¦ã„ã‚‹ã€‚å¼·ç›—å½è£…ã‹ï¼Ÿ",
+                    AREA3_START + 400.0f, 490.0f, MiniGameType::PasswordCrack, MapArea::StoreFront },
 
-            // Ø‹’‡F - –ÚŒ‚Ò‚ÌØŒ¾
-            { 7, "–ÚŒ‚Ò‚ÌØŒ¾", "23:10 A—«‚ª— Œû‚É“ü‚é‚Ì‚ğ–ÚŒ‚", 3300.0f, 510.0f, MiniGameType::QuickTimeEvent, MapArea::Outside },
+                    // --- ã‚¨ãƒªã‚¢4: åº—å¤– (11200 ~ 12000) ---
+                    { 7, "ç›®æ’ƒè€…ã®è¨¼è¨€", "23:10é ƒã€å¥³æ€§ãŒè£å£ã«å…¥ã‚‹ã®ã‚’ç›®æ’ƒ",
+                      AREA4_START + 200.0f, 510.0f, MiniGameType::QuickTimeEvent, MapArea::Outside },
 
-            // Ø‹’‡G - ƒ^ƒoƒR‚Ì‹z‚¢Šk
-            { 8, "ƒ^ƒoƒR‚Ì‹z‚¢Šk", "“X‚Ì‘O‚É—‚¿‚Ä‚¢‚½B”íŠQÒ‚Í”ñ‹i‰ŒÒ", 3700.0f, 500.0f, MiniGameType::None, MapArea::Outside }
+                    { 8, "ã‚¿ãƒã‚³ã®å¸ã„æ®»", "åº—ã®å‰ã«è½ã¡ã¦ã„ãŸã€‚è¢«å®³è€…ã¯éå–«ç…™è€…",
+                      AREA4_START + 600.0f, 500.0f, MiniGameType::None, MapArea::Outside }
         };
     }
 
-    // ”wŒiƒIƒuƒWƒFƒNƒg‚ğæ“¾
+    // èƒŒæ™¯ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å–å¾—ï¼ˆåº§æ¨™æ›´æ–°ï¼‰
     static std::vector<BackgroundObject> GetBackgroundObjects() {
         return {
-            // — ŒûƒGƒŠƒA
-            {"wall", 50.0f, 300.0f, 10.0f, 300.0f, ""},
-            {"shelf", 200.0f, 450.0f, 100.0f, 150.0f, "Resource/Objects/Shelf.png"},
-            {"shelf", 600.0f, 450.0f, 100.0f, 150.0f, "Resource/Objects/Shelf.png"},
-
-            // “X“à‰œƒGƒŠƒA
-            {"shelf", 850.0f, 450.0f, 100.0f, 150.0f, "Resource/Objects/Shelf.png"},
-            {"shelf", 1000.0f, 450.0f, 100.0f, 150.0f, "Resource/Objects/Shelf.png"},
-            {"shelf", 1400.0f, 450.0f, 100.0f, 150.0f, "Resource/Objects/Shelf.png"},
-
-            // ƒŒƒWü•ÓƒGƒŠƒA
-            {"counter", 1700.0f, 500.0f, 200.0f, 100.0f, "Resource/Objects/Counter.png"},
-            {"shelf", 2000.0f, 450.0f, 100.0f, 150.0f, "Resource/Objects/Shelf.png"},
-            {"shelf", 2200.0f, 450.0f, 100.0f, 150.0f, "Resource/Objects/Shelf.png"},
-
-            // “X“ªƒGƒŠƒA
-            {"window", 2500.0f, 220.0f, 80.0f, 80.0f, "Resource/Objects/Window.png"},
-            {"window", 2700.0f, 220.0f, 80.0f, 80.0f, "Resource/Objects/Window.png"},
-            {"counter", 2900.0f, 500.0f, 200.0f, 100.0f, "Resource/Objects/Counter.png"},
-
-            // “XŠOƒGƒŠƒA
-            {"wall", 3300.0f, 200.0f, 10.0f, 400.0f, ""}
+          
         };
     }
 
-    // ƒGƒŠƒA–¼‚ğæ“¾
-    static std::string GetAreaName(MapArea area) {
-        switch (area) {
-        case MapArea::BackDoor: return "— Œû";
-        case MapArea::StoreInner: return "“X“à‰œ";
-        case MapArea::CashRegister: return "ƒŒƒWü•Ó";
-        case MapArea::StoreFront: return "“X“ª";
-        case MapArea::Outside: return "“XŠO";
-        default: return "•s–¾";
+    static float GetAreaStartX(int areaIndex) {
+        switch (areaIndex) {
+        case 0: return (float)AREA0_START;
+        case 1: return (float)AREA1_START;
+        case 2: return (float)AREA2_START;
+        case 3: return (float)AREA3_START;
+        case 4: return (float)AREA4_START;
+        default: return 0.0f;
         }
     }
 
-    // XÀ•W‚©‚çƒGƒŠƒA‚ğ”»’è
+    static std::string GetAreaName(MapArea area) {
+        switch (area) {
+        case MapArea::BackDoor: return "è£å£";
+        case MapArea::StoreInner: return "åº—å†…å¥¥";
+        case MapArea::CashRegister: return "ãƒ¬ã‚¸å‘¨è¾º";
+        case MapArea::StoreFront: return "åº—é ­";
+        case MapArea::Outside: return "åº—å¤–";
+        default: return "ä¸æ˜";
+        }
+    }
+
     static MapArea GetAreaFromX(float x) {
-        if (x < AREA1_END) return MapArea::BackDoor;
-        if (x < AREA2_END) return MapArea::StoreInner;
-        if (x < AREA3_END) return MapArea::CashRegister;
-        if (x < AREA4_END) return MapArea::StoreFront;
+        if (x < AREA0_START + AREA_WIDTH + 100) return MapArea::BackDoor;
+        if (x < AREA1_START + AREA_WIDTH + 100) return MapArea::StoreInner;
+        if (x < AREA2_START + AREA_WIDTH + 100) return MapArea::CashRegister;
+        if (x < AREA3_START + AREA_WIDTH + 100) return MapArea::StoreFront;
         return MapArea::Outside;
     }
 };
