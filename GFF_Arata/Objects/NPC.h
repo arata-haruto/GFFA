@@ -3,40 +3,40 @@
 #include <string>
 #include <vector>
 
-// ØŒ¾ƒf[ƒ^\‘¢‘Ì
+// è¨¼è¨€ãƒ‡ãƒ¼ã‚¿æ§‹é€ ä½“
 struct Testimony {
-    std::string text;            // ØŒ¾“à—e
-    bool isImportant;            // d—v‚ÈØŒ¾‚©
-    bool requiresEvidence;       // “Á’è‚ÌØ‹’‚ª•K—v‚©
-    std::string requiredEvidence; // •K—v‚ÈØ‹’–¼
+    std::string text;            // è¨¼è¨€å†…å®¹
+    bool isImportant;            // é‡è¦ãªè¨¼è¨€ã‹
+    bool requiresEvidence;       // ç‰¹å®šã®è¨¼æ‹ ãŒå¿…è¦ã‹
+    std::string requiredEvidence; // å¿…è¦ãªè¨¼æ‹ å
 };
 
-// NPCó‘Ô
+// NPCçŠ¶æ…‹
 enum class NPCState {
-    Idle,            // ‘Ò‹@
-    Talking,         // ‰ï˜b’†
-    Suspicious,      // ‰ö‚µ‚¢”½‰
-    Cooperative      // ‹¦—Í“I
+    Idle,            // å¾…æ©Ÿ
+    Talking,         // ä¼šè©±ä¸­
+    Suspicious,      // æ€ªã—ã„åå¿œ
+    Cooperative      // å”åŠ›çš„
 };
 
-// NPCƒNƒ‰ƒX
+// NPCã‚¯ãƒ©ã‚¹
 class NPC {
 protected:
-    float x, y;                     // À•W
-    int handle;                     // ‰æ‘œƒnƒ“ƒhƒ‹
-    std::string name;               // –¼‘O
-    std::string role;               // –ğŠ„i—e‹^ÒA–ÚŒ‚Ò‚È‚Çj
-    NPCState state;                 // ó‘Ô
+    float x, y;                     // åº§æ¨™
+    int handle;                     // ç”»åƒãƒãƒ³ãƒ‰ãƒ«
+    std::string name;               // åå‰
+    std::string role;               // å½¹å‰²ï¼ˆå®¹ç–‘è€…ã€ç›®æ’ƒè€…ãªã©ï¼‰
+    NPCState state;                 // çŠ¶æ…‹
 
-    std::vector<Testimony> testimonies; // ØŒ¾ƒŠƒXƒg
-    int currentTestimonyIndex;      // Œ»İ‚ÌØŒ¾ƒCƒ“ƒfƒbƒNƒX
+    std::vector<Testimony> testimonies; // è¨¼è¨€ãƒªã‚¹ãƒˆ
+    int currentTestimonyIndex;      // ç¾åœ¨ã®è¨¼è¨€ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹
 
-    bool isInteracting;             // ƒvƒŒƒCƒ„[‚ª‹ß‚Ã‚¢‚Ä‚¢‚é‚©
-    bool hasBeenQuestioned;         // Šù‚É¿–â‚³‚ê‚½‚©
+    bool isInteracting;             // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒè¿‘ã¥ã„ã¦ã„ã‚‹ã‹
+    bool hasBeenQuestioned;         // æ—¢ã«è³ªå•ã•ã‚ŒãŸã‹
 
-    // ƒGƒtƒFƒNƒg—p
-    float animTimer;                // ƒAƒjƒ[ƒVƒ‡ƒ“ƒ^ƒCƒ}[
-    bool flip;                      // Œü‚«i¶‰E”½“]j
+    // ã‚¨ãƒ•ã‚§ã‚¯ãƒˆç”¨
+    float animTimer;                // ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚¿ã‚¤ãƒãƒ¼
+    bool flip;                      // å‘ãï¼ˆå·¦å³åè»¢ï¼‰
 
 public:
     NPC(float posX, float posY, const std::string& n, const std::string& r);
@@ -46,7 +46,7 @@ public:
     virtual void Update(float playerX, float playerY, float deltaTime);
     virtual void Draw(float cameraOffsetX = 0.0f) const;
 
-    // ØŒ¾ŠÖ˜A
+    // è¨¼è¨€é–¢é€£
     void AddTestimony(const Testimony& testimony);
     const Testimony* GetCurrentTestimony() const;
     const std::vector<Testimony>& GetAllTestimonies() const { return testimonies; }
@@ -54,7 +54,7 @@ public:
     void NextTestimony();
     void ResetTestimonies();
 
-    // ƒQƒbƒ^[
+    // ã‚²ãƒƒã‚¿ãƒ¼
     const std::string& GetName() const { return name; }
     const std::string& GetRole() const { return role; }
     bool IsInteracting() const { return isInteracting; }
@@ -63,7 +63,7 @@ public:
     float GetX() const { return x; }
     float GetY() const { return y; }
 
-    // ƒZƒbƒ^[
+    // ã‚»ãƒƒã‚¿ãƒ¼
     void SetState(NPCState newState) { state = newState; }
     void SetQuestioned(bool questioned) { hasBeenQuestioned = questioned; }
 };

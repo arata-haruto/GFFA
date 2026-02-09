@@ -2,22 +2,22 @@
 #include "NPC.h"
 
 enum class SuspectType {
-    Fujisaki,      // “¡è”üçiŒ³]‹Æˆõj
-    Sasaki,        // ²X–ØŒ’‘¾i—×‚Ì“Xåj
-    Kimura,        // –Ø‘º’B–çi’íjš”Æl
-    Yamada         // R“cˆê˜Yií˜A‹qj
+    Fujisaki,      // è—¤å´ç¾å’²ï¼ˆå…ƒå¾“æ¥­å“¡ï¼‰
+    Sasaki,        // ä½ã€…æœ¨å¥å¤ªï¼ˆéš£ã®åº—ä¸»ï¼‰
+    Kimura,        // æœ¨æ‘é”ä¹Ÿï¼ˆå¼Ÿï¼‰â˜…çŠ¯äºº
+    Yamada         // å±±ç”°ä¸€éƒï¼ˆå¸¸é€£å®¢ï¼‰
 };
 
 class Suspect : public NPC {
 private:
     SuspectType suspectType;
-    bool isGuilty;              // ”Æl‚©‚Ç‚¤‚©
+    bool isGuilty;              // çŠ¯äººã‹ã©ã†ã‹
 
 public:
     Suspect(float posX, float posY, SuspectType type);
 
     void Initialize() override;
-    void SetupTestimonies();    // ØŒ¾‚ğİ’è
+    void SetupTestimonies();    // è¨¼è¨€ã‚’è¨­å®š
 
     SuspectType GetSuspectType() const { return suspectType; }
     bool IsGuilty() const { return isGuilty; }

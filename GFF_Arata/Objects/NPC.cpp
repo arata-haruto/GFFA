@@ -17,16 +17,15 @@ NPC::~NPC() {
 }
 
 void NPC::Initialize() {
-    // ƒfƒtƒHƒ‹ƒg‰æ‘œ“Ç‚İ‚İiƒvƒŒ[ƒXƒzƒ‹ƒ_[j
-    // handle = LoadGraph("Resource/Characters/NPC/Default.png");
+    // ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆç”»åƒèª­ã¿è¾¼ã¿
 }
 
 void NPC::Update(float playerX, float playerY, float deltaTime) {
-    // ƒAƒjƒ[ƒVƒ‡ƒ“ƒ^ƒCƒ}[XV
+    // ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚¿ã‚¤ãƒãƒ¼æ›´æ–°
     animTimer += deltaTime * 2.0f;
     if (animTimer > 6.28f) animTimer = 0.0f;
 
-    // ƒvƒŒƒCƒ„[‚Æ‚Ì‹——£”»’è
+    // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã¨ã®è·é›¢åˆ¤å®š
     float dx = playerX - x;
     float dy = playerY - y;
     float distance = sqrt(dx * dx + dy * dy);
@@ -34,15 +33,13 @@ void NPC::Update(float playerX, float playerY, float deltaTime) {
     const float interactionRange = 100.0f;
     isInteracting = (distance < interactionRange);
 
-    // ƒvƒŒƒCƒ„[‚Ì•ûŒü‚ğŒü‚­
+    // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®æ–¹å‘ã‚’å‘ã
     if (isInteracting) {
         flip = (dx < 0);
     }
 
-    // ó‘Ô‚É‰‚¶‚½‹““®
     switch (state) {
     case NPCState::Suspicious:
-        // ‰ö‚µ‚¢”½‰i­‚µŒã‚¸‚³‚è‚·‚é‚æ‚¤‚È‰‰o‚È‚Çj
         break;
     }
 }
@@ -50,10 +47,10 @@ void NPC::Update(float playerX, float playerY, float deltaTime) {
 void NPC::Draw(float cameraOffsetX) const {
     float drawX = x - cameraOffsetX;
 
-    // ‰æ–ÊŠO‚È‚ç•`‰æ‚µ‚È‚¢
+    // ç”»é¢å¤–ãªã‚‰æç”»ã—ãªã„
     if (drawX < -100 || drawX > 1380) return;
 
-    // NPC–{‘Ì•`‰æ
+    // NPCæœ¬ä½“æç”»
     if (handle != -1) {
         if (flip) {
             DrawTurnGraph((int)drawX - 25, (int)y - 150, handle, TRUE);
@@ -63,42 +60,41 @@ void NPC::Draw(float cameraOffsetX) const {
         }
     }
     else {
-        // ƒvƒŒ[ƒXƒzƒ‹ƒ_[ilŠpj
         unsigned int color;
         switch (state) {
-        case NPCState::Suspicious: color = GetColor(255, 100, 100); break; // Ô
-        case NPCState::Cooperative: color = GetColor(100, 255, 100); break; // —Î
-        case NPCState::Talking: color = GetColor(100, 100, 255); break; // Â
-        default: color = GetColor(200, 200, 200); break; // ƒOƒŒ[
+        case NPCState::Suspicious: color = GetColor(255, 100, 100); break; // èµ¤
+        case NPCState::Cooperative: color = GetColor(100, 255, 100); break; // ç·‘
+        case NPCState::Talking: color = GetColor(100, 100, 255); break; // é’
+        default: color = GetColor(200, 200, 200); break; // ã‚°ãƒ¬ãƒ¼
         }
         DrawBox((int)drawX - 20, (int)y - 160, (int)drawX + 20, (int)y, color, TRUE);
         DrawBox((int)drawX - 20, (int)y - 160, (int)drawX + 20, (int)y, GetColor(255, 255, 255), FALSE);
     }
 
-    // –¼‘O•\¦
+    // åå‰è¡¨ç¤º
     int nameWidth = GetDrawStringWidth(name.c_str(), -1);
     int nameX = (int)drawX - nameWidth / 2;
     DrawFormatString(nameX, (int)y - 180, GetColor(255, 255, 255), "%s", name.c_str());
 
-    // –ğŠ„•\¦
+    // å½¹å‰²è¡¨ç¤º
     int roleWidth = GetDrawStringWidth(role.c_str(), -1);
     int roleX = (int)drawX - roleWidth / 2;
     DrawFormatString(roleX, (int)y - 195, GetColor(200, 200, 100), "<%s>", role.c_str());
 
-    // ƒCƒ“ƒ^ƒ‰ƒNƒVƒ‡ƒ“‰Â”\•\¦
+    // ã‚¤ãƒ³ã‚¿ãƒ©ã‚¯ã‚·ãƒ§ãƒ³å¯èƒ½è¡¨ç¤º
     if (isInteracting) {
-        // ‚«o‚µƒAƒCƒRƒ“
+        // å¹ãå‡ºã—ã‚¢ã‚¤ã‚³ãƒ³
         int iconY = (int)y - 210 + (int)(5 * sin(animTimer * 3));
         DrawCircle((int)drawX, iconY, 10, GetColor(255, 255, 255), FALSE, 2);
-        DrawFormatString((int)drawX + 15, iconY - 5, GetColor(255, 255, 0), "[Z] ˜b‚·");
+        DrawFormatString((int)drawX + 15, iconY - 5, GetColor(255, 255, 0), "[A] è©±ã™");
 
-        // Šù‚É¿–âÏ‚İ‚Ìê‡
+        // æ—¢ã«è³ªå•æ¸ˆã¿ã®å ´åˆ
         if (hasBeenQuestioned) {
-            DrawFormatString((int)drawX - 40, (int)y + 10, GetColor(150, 150, 150), "(¿–âÏ‚İ)");
+            DrawFormatString((int)drawX - 40, (int)y + 10, GetColor(150, 150, 150), "(è³ªå•æ¸ˆã¿)");
         }
     }
 
-    // ó‘ÔƒCƒ“ƒWƒP[ƒ^[
+    // çŠ¶æ…‹ã‚¤ãƒ³ã‚¸ã‚±ãƒ¼ã‚¿ãƒ¼
     const char* stateText = nullptr;
     unsigned int stateColor = GetColor(255, 255, 255);
 
@@ -108,7 +104,7 @@ void NPC::Draw(float cameraOffsetX) const {
         stateColor = GetColor(255, 50, 50);
         break;
     case NPCState::Cooperative:
-        stateText = "ô";
+        stateText = "â™ª";
         stateColor = GetColor(100, 255, 100);
         break;
     case NPCState::Talking:

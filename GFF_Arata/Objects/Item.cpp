@@ -3,7 +3,6 @@
 #include "DxLib.h"
 #include <cmath>
 
-// 静的メンバの定義
 int Item::handle = -1;
 
 Item::Item(float posX, float posY, const std::string& n, const std::string& d, MiniGameType type)
@@ -13,18 +12,12 @@ Item::Item(float posX, float posY, const std::string& n, const std::string& d, M
 }
 
 void Item::Init() {
-    if (handle == -1) {
-        handle = LoadGraph("Resource/Objects/Evidence.png");
-        if (handle == -1) {
-            printfDx("証拠画像(Evidence.png)が見つかりません - プレースホルダーで描画します\n");
-        }
-    }
+    
 }
 
 void Item::Update(float playerX, float playerY, float deltaTime) {
     if (isCollected) return;
 
-    // プレイヤーとの距離計算
     float dx = playerX - x;
     float dy = playerY - y;
     float distance = sqrt(dx * dx + dy * dy);
@@ -32,7 +25,7 @@ void Item::Update(float playerX, float playerY, float deltaTime) {
     const float interactionRange = 80.0f;
     bool isNearby = (distance < interactionRange);
 
-    if (isNearby) {
+    if (isNearby && gameType == MiniGameType::None) {
         InputManager* input = InputManager::GetInstance();
 
         if (input->GetKeyState(KEY_INPUT_Z) == eInputState::Pressed ||
@@ -41,7 +34,6 @@ void Item::Update(float playerX, float playerY, float deltaTime) {
             isCollected = true;
             showMessage = true;
             messageTimer = 2.0f;
-            printfDx("証拠を入手: %s\n", name.c_str());
         }
     }
 
@@ -58,27 +50,22 @@ void Item::Draw(float cameraOffsetX) const {
 
     float drawX = x - cameraOffsetX;
 
-    // 画面外なら描画しない
     if (drawX < -100 || drawX > 1380) return;
 
-    // 光るエフェクト
     static float animTime = 0.0f;
     animTime += 0.05f;
     if (animTime > 6.28f) animTime = 0.0f;
 
     int glowAlpha = (int)(128 + 127 * sin(animTime));
 
-    // 外側の光
     SetDrawBlendMode(DX_BLENDMODE_ADD, glowAlpha / 2);
     DrawCircle((int)drawX, (int)y, 35, GetColor(255, 255, 0), TRUE);
     SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 
-    // 内側の光
     SetDrawBlendMode(DX_BLENDMODE_ADD, glowAlpha);
     DrawCircle((int)drawX, (int)y, 20, GetColor(255, 215, 0), TRUE);
     SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 
-    // アイテム本体
     if (handle != -1) {
         DrawGraph((int)drawX - 16, (int)y - 16, handle, TRUE);
     }
@@ -88,7 +75,6 @@ void Item::Draw(float cameraOffsetX) const {
         DrawFormatString((int)drawX - 4, (int)y - 8, GetColor(0, 0, 0), "!");
     }
 
-    // アイテム名表示
     int nameX = (int)drawX - GetDrawStringWidth(name.c_str(), -1) / 2;
     int nameY = (int)y - 50;
 
@@ -98,7 +84,6 @@ void Item::Draw(float cameraOffsetX) const {
 
     DrawFormatString(nameX, nameY, GetColor(255, 255, 100), "%s", name.c_str());
 
-    // ミニゲームアイコン
     if (gameType != MiniGameType::None) {
         int iconX = (int)drawX + 20;
         int iconY = (int)y - 20;
@@ -124,7 +109,6 @@ void Item::Draw(float cameraOffsetX) const {
         }
     }
 
-    // 取得メッセージ
     if (showMessage) {
         int msgX = 640 - 120;
         int msgY = 100;
@@ -138,7 +122,7 @@ void Item::Draw(float cameraOffsetX) const {
         DrawBox(msgX, msgY, msgX + msgW, msgY + msgH, GetColor(255, 255, 100), FALSE);
         DrawBox(msgX + 2, msgY + 2, msgX + msgW - 2, msgY + msgH - 2, GetColor(200, 200, 80), FALSE);
 
-        DrawFormatString(msgX + 10, msgY + 10, GetColor(255, 255, 255), "証拠を入手！");
+        DrawFormatString(msgX + 10, msgY + 10, GetColor(255, 255, 255), "");
 
         std::string displayName = name;
         if (displayName.length() > 20) {
