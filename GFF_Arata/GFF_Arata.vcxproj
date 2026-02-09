@@ -156,6 +156,10 @@
     <ClInclude Include="Utility\ResourceManager.h" />
     <ClInclude Include="Utility\singleton.h" />
     <ClInclude Include="Utility\Vector2D.h" />
+    <ClInclude Include="Utility\MiniGameManager.h" />
+    <ClInclude Include="Utility\AreaTransitionManager.h" />
+    <ClInclude Include="Utility\GameTimer.h" />
+    <ClInclude Include="Utility\BackgroundManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AppMain.cpp" />
@@ -180,6 +184,10 @@
     <ClCompile Include="Utility\ReasoningUI.cpp" />
     <ClCompile Include="Utility\ResourceManager.cpp" />
     <ClCompile Include="Utility\Vector2D.cpp" />
+    <ClCompile Include="Utility\MiniGameManager.cpp" />
+    <ClCompile Include="Utility\AreaTransitionManager.cpp" />
+    <ClCompile Include="Utility\GameTimer.cpp" />
+    <ClCompile Include="Utility\BackgroundManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

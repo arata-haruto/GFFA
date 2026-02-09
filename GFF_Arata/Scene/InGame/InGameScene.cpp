@@ -21,9 +21,6 @@ Floor g_floor;
 // コンストラクタ
 InGameScene::InGameScene()
     : currentPhase(GamePhase::Opening),
-    timeLimit(60.0f),
-    remainingTime(60.0f),
-    timerPaused(true),
     allEvidenceCollected(false),
     dialogueSystem(nullptr),
     reasoningManager(nullptr),
@@ -34,30 +31,19 @@ InGameScene::InGameScene()
     resultDisplayTime(0.0f),
     cameraX(0.0f),
     player1(nullptr),
-    mg_resultTimer(0.0f),
-    mg_lastResultSuccess(false),
-    currentAreaIndex(0),
     mainbgm(-1),
     se_success(-1),
     se_fail(-1),
     showNPCIndicator(true),
-    back_ground_image(-1),
     charHandle_Player(-1),
     charHandle_Police(-1),
     charHandle_Fujisaki(-1),
     charHandle_Sasaki(-1),
     charHandle_Kimura(-1),
     charHandle_Yamada(-1),
-    currentInteractingItem(nullptr),
-    mg_targetItem(nullptr),
-    mg_barPosition(0.0f),
-    mg_barSpeed(0.0f),
-    mg_targetMin(0.0f),
-    mg_targetMax(0.0f),
     isSelectingEvidence(false),
     evidenceResultTimer(0.0f)
 {
-    for (int i = 0; i < 4; i++) bgHandles[i] = -1;
 }
 
 InGameScene::~InGameScene()
@@ -98,7 +84,12 @@ void InGameScene::Initialize()
     dialogueSystem->Initialize();
 
     LoadCharacterImages();
-    LoadBackgroundObjects();
+
+    // マネージャーの初期化
+    backgroundManager.Initialize();
+    areaTransitionManager.Initialize();
+    gameTimer.Initialize(60.0f);
+    miniGameManager.Initialize();
 
     reasoningManager = new ReasoningManager();
     reasoningManager->Initialize();
@@ -108,25 +99,16 @@ void InGameScene::Initialize()
     reasoningUI->Initialize();
 
     currentPhase = GamePhase::Opening;
-    timerPaused = true;
 
-    currentAreaIndex = 0;
     cameraX = -240.0f;
     player1->SetX(100.0f);
-
-    back_ground_image = LoadGraph("Resource/Background/Shop_BG.png");
-
-    if (back_ground_image == -1) {
-        bgHandles[0] = LoadGraph("Resource/Background/BG.jpg");
-        bgHandles[1] = LoadGraph("Resource/Background/BG.jpg");
-        bgHandles[2] = LoadGraph("Resource/Background/BG.jpg");
-        bgHandles[3] = LoadGraph("Resource/Background/BG.jpg");
-        bgHandles[4] = LoadGraph("Resource/Background/BG.jpg");
-    }
 
     mainbgm = LoadSoundMem("Resource/Sound/BGM.mp3");
     se_success = LoadSoundMem("Resource/Sound/GetItem.mp3");
     se_fail = LoadSoundMem("Resource/Sound/footSE.mp3");
+
+    // ミニゲームにSE設定
+    miniGameManager.SetSoundEffects(se_success, se_fail);
 
     if (mainbgm != -1) {
         ChangeVolumeSoundMem(180, mainbgm);
@@ -137,9 +119,7 @@ void InGameScene::Initialize()
 }
 
 void InGameScene::LoadCharacterImages() {
-    // 主人公の立ち絵画像を読み込み（会話システム用）
     charHandle_Player = LoadGraph("Resource/Characters/Player/chara.png");
-    
     charHandle_Police = LoadGraph("Resource/Characters/NPC/Police.png");
     charHandle_Fujisaki = LoadGraph("Resource/Characters/Suspects/Fujisaki.png");
     charHandle_Sasaki = LoadGraph("Resource/Characters/Suspects/Sasaki.png");
@@ -185,54 +165,45 @@ void InGameScene::SetupNPCDialogue(NPC* npc) {
     dialogueSystem->Start();
 }
 
-void InGameScene::LoadBackgroundObjects()
-{
-    backgroundObjects.clear();
-    auto objects = MapData::GetBackgroundObjects();
-    for (const auto& obj : objects) {
-        int handle = -1;
-        if (!obj.imagePath.empty()) {
-            handle = LoadGraph(obj.imagePath.c_str());
-        }
-        backgroundObjects.push_back({ handle, obj.x, obj.y, obj.width, obj.height });
-    }
-}
-
 eSceneType InGameScene::Update(float delta_second)
 {
     InputManager* input = InputManager::GetInstance();
 
+    // エリア遷移処理
     if (currentPhase == GamePhase::AreaTransition) {
-        UpdateAreaTransition(delta_second);
+        areaTransitionManager.Update(delta_second);
+        if (!areaTransitionManager.IsTransitioning()) {
+            currentPhase = GamePhase::EvidenceCollection;
+            gameTimer.Resume();
+        }
         return GetNowSceneType();
     }
 
+    // オープニング・NPC会話処理
     if (currentPhase == GamePhase::Opening || currentPhase == GamePhase::NPCDialogue) {
         dialogueSystem->Update(delta_second);
 
         if (dialogueSystem->IsFinished()) {
             if (currentPhase == GamePhase::Opening) {
-             
                 currentPhase = GamePhase::EvidenceCollection;
-                timerPaused = true; // タイマーは止めたまま
-
-          
+                // タイマーは止めたまま
             }
             else {
                 currentPhase = GamePhase::EvidenceCollection;
-                timerPaused = false;
+                gameTimer.Resume();
                 npcManager.EndDialogue();
             }
         }
         return GetNowSceneType();
     }
 
+    // 証拠収集フェーズ
     if (currentPhase == GamePhase::EvidenceCollection) {
-        if (timerPaused) {
+        if (gameTimer.IsPaused()) {
             // Aボタンで開始
             if (input->GetKeyState(KEY_INPUT_Z) == eInputState::Pressed ||
                 input->GetButtonState(XINPUT_BUTTON_A) == eInputState::Pressed) {
-                timerPaused = false;
+                gameTimer.Resume();
             }
             return GetNowSceneType();
         }
@@ -246,7 +217,14 @@ eSceneType InGameScene::Update(float delta_second)
         }
 
         if (player1) player1->Update();
-        CheckAreaTransition();
+        
+        // エリア遷移チェック
+        if (areaTransitionManager.CheckAndStartTransition(player1->GetX())) {
+            currentPhase = GamePhase::AreaTransition;
+            gameTimer.Pause();
+            int prevAreaIndex = areaTransitionManager.GetCurrentAreaIndex();
+            // プレイヤー位置は遷移完了時に更新
+        }
 
         if (input->GetKeyState(KEY_INPUT_A) == eInputState::Pressed ||
             input->GetButtonState(XINPUT_BUTTON_START) == eInputState::Pressed)
@@ -267,6 +245,7 @@ eSceneType InGameScene::Update(float delta_second)
         itemManager.Update(player1->GetX(), player1->GetY(), delta_second);
         npcManager.Update(player1->GetX(), player1->GetY(), delta_second);
 
+        // NPC会話開始
         const auto& npcs = npcManager.GetAllNPCs();
         for (const auto& npc : npcs) {
             if (npc->IsInteracting() &&
@@ -274,7 +253,7 @@ eSceneType InGameScene::Update(float delta_second)
                     input->GetButtonState(XINPUT_BUTTON_A) == eInputState::Pressed)) {
 
                 currentPhase = GamePhase::NPCDialogue;
-                timerPaused = true;
+                gameTimer.Pause();
 
                 npc->SetQuestioned(true);
                 npc->SetState(NPCState::Talking);
@@ -284,6 +263,7 @@ eSceneType InGameScene::Update(float delta_second)
             }
         }
 
+        // アイテム取得
         const auto& items = itemManager.GetItems();
         for (Item* item : items) {
             if (item == nullptr) continue;
@@ -295,37 +275,47 @@ eSceneType InGameScene::Update(float delta_second)
                     if (input->GetKeyState(KEY_INPUT_Z) == eInputState::Pressed ||
                         input->GetButtonState(XINPUT_BUTTON_A) == eInputState::Pressed)
                     {
-                        StartMiniGame(item);
+                        currentPhase = GamePhase::MiniGame;
+                        miniGameManager.Start(item);
                         break;
                     }
                 }
             }
         }
 
-        float areaStartX = MapData::GetAreaStartX(currentAreaIndex);
+        // カメラ位置更新
+        float areaStartX = MapData::GetAreaStartX(areaTransitionManager.GetCurrentAreaIndex());
         cameraX = (areaStartX + 400.0f) - 640.0f;
 
-        if (!timerPaused) {
-            remainingTime -= delta_second;
-            if (remainingTime < 0.0f) remainingTime = 0.0f;
-        }
+        // タイマー更新
+        gameTimer.Update(delta_second);
 
+        // 全証拠収集チェック
         if (itemManager.GetCollectedCount() >= itemManager.GetTotalCount()) {
             allEvidenceCollected = true;
         }
 
-        if (remainingTime <= 0.0f || allEvidenceCollected) {
+        if (gameTimer.IsExpired() || allEvidenceCollected) {
             TransitionToReasoning();
         }
     }
     else if (currentPhase == GamePhase::MiniGame) {
-        UpdateMiniGame(delta_second);
-        if (!timerPaused) {
-            remainingTime -= delta_second;
-            if (remainingTime <= 0.0f) {
-                remainingTime = 0.0f;
-                TransitionToReasoning();
-            }
+        float remainingTime = gameTimer.GetRemainingTime();
+        miniGameManager.Update(delta_second, remainingTime);
+        
+        // ミニゲームでタイムペナルティがあった場合
+        if (remainingTime < gameTimer.GetRemainingTime()) {
+            gameTimer.SubtractTime(gameTimer.GetRemainingTime() - remainingTime);
+        }
+        
+        if (!miniGameManager.IsActive()) {
+            currentPhase = GamePhase::EvidenceCollection;
+            gameTimer.Resume();
+        }
+        
+        gameTimer.Update(delta_second);
+        if (gameTimer.IsExpired()) {
+            TransitionToReasoning();
         }
     }
     else if (currentPhase == GamePhase::Reasoning) {
@@ -402,82 +392,17 @@ eSceneType InGameScene::Update(float delta_second)
     return GetNowSceneType();
 }
 
-// ... CheckAreaTransition, ChangeArea, UpdateAreaTransition ...
-void InGameScene::CheckAreaTransition() {
-    float playerX = player1->GetX();
-    float areaStartX = MapData::GetAreaStartX(currentAreaIndex);
-    float areaEndX = areaStartX + MapData::AREA_WIDTH;
-    if (playerX > areaEndX - 30.0f && currentAreaIndex < 4) ChangeArea(currentAreaIndex + 1);
-    else if (playerX < areaStartX + 30.0f && currentAreaIndex > 0) ChangeArea(currentAreaIndex - 1);
-}
-
-void InGameScene::ChangeArea(int newAreaIndex) {
-    currentPhase = GamePhase::AreaTransition;
-    nextAreaIndex = newAreaIndex;
-    isFadingOut = true;
-    fadeAlpha = 0.0f;
-    timerPaused = true;
-}
-
-void InGameScene::UpdateAreaTransition(float delta_second) {
-    float fadeSpeed = 300.0f;
-    if (isFadingOut) {
-        fadeAlpha += fadeSpeed * delta_second;
-        if (fadeAlpha >= 255.0f) {
-            fadeAlpha = 255.0f;
-            isFadingOut = false;
-            int prevAreaIndex = currentAreaIndex;
-            currentAreaIndex = nextAreaIndex;
-            float newAreaStartX = MapData::GetAreaStartX(currentAreaIndex);
-            float newAreaEndX = newAreaStartX + MapData::AREA_WIDTH;
-            if (prevAreaIndex < currentAreaIndex) player1->SetX(newAreaStartX + 100.0f);
-            else player1->SetX(newAreaEndX - 100.0f);
-        }
-    }
-    else {
-        fadeAlpha -= fadeSpeed * delta_second;
-        if (fadeAlpha <= 0.0f) {
-            fadeAlpha = 0.0f;
-            currentPhase = GamePhase::EvidenceCollection;
-            timerPaused = false;
-        }
-    }
-}
-
 void InGameScene::Draw() const
 {
+    int currentAreaIndex = areaTransitionManager.GetCurrentAreaIndex();
+    
     // 背景描画
     if (currentPhase == GamePhase::Opening || currentPhase == GamePhase::NPCDialogue) {
-        DrawBox(0, 0, 1280, 720, GetColor(0, 0, 0), TRUE);
-        int handle = bgHandles[currentAreaIndex];
-        if (handle != -1) {
-            SetDrawBlendMode(DX_BLENDMODE_ALPHA, 80);
-            DrawGraph(0, 0, handle, TRUE);
-            SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
-        }
+        backgroundManager.DrawBackground(currentAreaIndex, true);
     }
     else {
-        if (back_ground_image != -1) {
-            int bgW, bgH;
-            GetGraphSize(back_ground_image, &bgW, &bgH);
-            int srcX = currentAreaIndex * 800;
-            int srcW = 800;
-            int drawX = (1280 - 800) / 2;
-
-            if (currentAreaIndex == 0) SetDrawBright(200, 200, 200);
-            else if (currentAreaIndex == 1) SetDrawBright(220, 220, 255);
-            else if (currentAreaIndex == 2) SetDrawBright(255, 255, 200);
-            else if (currentAreaIndex == 3) SetDrawBright(255, 200, 200);
-            else SetDrawBright(100, 100, 150);
-
-            DrawRectGraph(drawX, 0, srcX, 0, srcW, SCREEN_HEIGHT, back_ground_image, TRUE, FALSE);
-            SetDrawBright(255, 255, 255);
-        }
-        else {
-            int handle = bgHandles[currentAreaIndex];
-            if (handle != -1) DrawGraph(0, 0, handle, TRUE);
-        }
-        DrawBackgroundObjects(cameraX);
+        backgroundManager.DrawBackground(currentAreaIndex, false);
+        backgroundManager.DrawBackgroundObjects(cameraX);
     }
 
     if (currentPhase == GamePhase::Opening) {
@@ -499,8 +424,8 @@ void InGameScene::Draw() const
         itemManager.Draw(cameraX);
         if (player1) player1->Draw(cameraX);
 
-        // ★追加: 事件概要表示（タイマー停止中）
-        if (timerPaused) {
+        // 事件概要表示（タイマー停止中）
+        if (gameTimer.IsPaused()) {
             SetDrawBlendMode(DX_BLENDMODE_ALPHA, 180);
             DrawBox(0, 0, 1280, 720, GetColor(0, 0, 0), TRUE);
             SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
@@ -523,7 +448,7 @@ void InGameScene::Draw() const
             SetFontSize(16);
         }
         else if (!itemManager.IsOpen()) {
-            DrawTimer();
+            gameTimer.Draw();
             DrawPhaseInfo();
             const char* areas[] = { "裏口", "店内奥", "レジ周辺", "店頭", "店外" };
             int areaIdx = currentAreaIndex;
@@ -542,7 +467,7 @@ void InGameScene::Draw() const
         g_floor.Draw(cameraX);
         itemManager.Draw(cameraX);
         if (player1) player1->Draw(cameraX);
-        SetDrawBlendMode(DX_BLENDMODE_ALPHA, (int)fadeAlpha);
+        SetDrawBlendMode(DX_BLENDMODE_ALPHA, (int)areaTransitionManager.GetFadeAlpha());
         DrawBox(0, 0, 1280, 720, GetColor(0, 0, 0), TRUE);
         SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
     }
@@ -550,17 +475,18 @@ void InGameScene::Draw() const
         g_floor.Draw(cameraX);
         itemManager.Draw(cameraX);
         if (player1) player1->Draw(cameraX);
-        DrawTimer();
-        DrawMiniGame();
+        gameTimer.Draw();
+        miniGameManager.Draw();
     }
     else if (currentPhase == GamePhase::Reasoning) {
         if (showResult) {
             DrawResult();
         }
         else {
-            if (back_ground_image != -1) {
+            int bgImage = backgroundManager.GetMainBackgroundImage();
+            if (bgImage != -1) {
                 SetDrawBlendMode(DX_BLENDMODE_ALPHA, 100);
-                DrawGraph(0, 0, back_ground_image, TRUE);
+                DrawGraph(0, 0, bgImage, TRUE);
                 SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
             }
             if (reasoningUI && reasoningManager) {
@@ -587,21 +513,6 @@ void InGameScene::Draw() const
     }
 }
 
-
-void InGameScene::DrawBackgroundObjects(float cameraOffsetX) const {
-    for (const auto& obj : backgroundObjects) {
-        float drawX = obj.x - cameraOffsetX;
-        if (drawX + obj.width < 0 || drawX > SCREEN_WIDTH) continue;
-        if (obj.handle != -1) {
-            DrawExtendGraph((int)drawX, (int)obj.y, (int)(drawX + obj.width), (int)(obj.y + obj.height), obj.handle, TRUE);
-        }
-        else {
-            DrawBox((int)drawX, (int)obj.y, (int)(drawX + obj.width), (int)(obj.y + obj.height), GetColor(100, 100, 100), TRUE);
-        }
-    }
-}
-
-void InGameScene::DrawAreaInfo() const { /*...*/ }
 void InGameScene::DrawNPCIndicator() const {
     if (!player1) return;
     float playerX = player1->GetX();
@@ -650,47 +561,18 @@ void InGameScene::Finalize() {
         DeleteSoundMem(se_fail);
         se_fail = -1;
     }
-    if (back_ground_image >= 0) {
-        DeleteGraph(back_ground_image);
-        back_ground_image = -1;
-    }
-    for (int i = 0; i < 5; i++) {
-        if (bgHandles[i] != -1) {
-            DeleteGraph(bgHandles[i]);
-            bgHandles[i] = -1;
-        }
-    }
-    for (auto& obj : backgroundObjects) {
-        if (obj.handle != -1) DeleteGraph(obj.handle);
-    }
-    backgroundObjects.clear();
     
+    // BackgroundManagerが自動で解放するのでここでは不要
+    // backgroundManager.Finalize() はデストラクタで呼ばれる
+
     // キャラクター画像の削除
-    if (charHandle_Player != -1) {
-        DeleteGraph(charHandle_Player);
-        charHandle_Player = -1;
-    }
-    if (charHandle_Police != -1) {
-        DeleteGraph(charHandle_Police);
-        charHandle_Police = -1;
-    }
-    if (charHandle_Fujisaki != -1) {
-        DeleteGraph(charHandle_Fujisaki);
-        charHandle_Fujisaki = -1;
-    }
-    if (charHandle_Sasaki != -1) {
-        DeleteGraph(charHandle_Sasaki);
-        charHandle_Sasaki = -1;
-    }
-    if (charHandle_Kimura != -1) {
-        DeleteGraph(charHandle_Kimura);
-        charHandle_Kimura = -1;
-    }
-    if (charHandle_Yamada != -1) {
-        DeleteGraph(charHandle_Yamada);
-        charHandle_Yamada = -1;
-    }
-    
+    if (charHandle_Player != -1) { DeleteGraph(charHandle_Player); charHandle_Player = -1; }
+    if (charHandle_Police != -1) { DeleteGraph(charHandle_Police); charHandle_Police = -1; }
+    if (charHandle_Fujisaki != -1) { DeleteGraph(charHandle_Fujisaki); charHandle_Fujisaki = -1; }
+    if (charHandle_Sasaki != -1) { DeleteGraph(charHandle_Sasaki); charHandle_Sasaki = -1; }
+    if (charHandle_Kimura != -1) { DeleteGraph(charHandle_Kimura); charHandle_Kimura = -1; }
+    if (charHandle_Yamada != -1) { DeleteGraph(charHandle_Yamada); charHandle_Yamada = -1; }
+
     if (player1) { delete player1; player1 = nullptr; }
     if (reasoningManager) { delete reasoningManager; reasoningManager = nullptr; }
     if (reasoningUI) { delete reasoningUI; reasoningUI = nullptr; }
@@ -698,111 +580,21 @@ void InGameScene::Finalize() {
 }
 
 eSceneType InGameScene::GetNowSceneType() const { return eSceneType::eInGame; }
+
 void InGameScene::TransitionToReasoning() {
     if (player1) player1->StopAudio();
     currentPhase = GamePhase::Reasoning;
     if (reasoningManager) {
         std::vector<std::string> collected = itemManager.GetCollectedItems();
-        //reasoningManager->FilterOptions(collected);
         reasoningManager->SetActive(true);
     }
 }
-void InGameScene::StartMiniGame(Item* item) {
-    currentPhase = GamePhase::MiniGame;
-    mg_targetItem = item;
-    mg_barPosition = 0.0f;
-    mg_barSpeed = 200.0f;
-    mg_targetMin = 40.0f;
-    mg_targetMax = 60.0f;
-    mg_resultTimer = 0.0f;
-}
-void InGameScene::OnMiniGameComplete(bool success, Item* item) {
-    if (success && item) {
-        item->SetCollected(true);
-    }
-    currentInteractingItem = nullptr;
-    currentPhase = GamePhase::EvidenceCollection;
-    timerPaused = false;
-}
-void InGameScene::UpdateMiniGame(float delta_second) {
-    if (mg_resultTimer > 0.0f) {
-        mg_resultTimer -= delta_second;
-        if (mg_resultTimer <= 0.0f) {
-            OnMiniGameComplete(mg_lastResultSuccess, mg_targetItem);
-        }
-        return;
-    }
-    InputManager* input = InputManager::GetInstance();
-    mg_barPosition += mg_barSpeed * delta_second;
-    if (mg_barPosition > 100.0f) mg_barPosition = 0.0f;
-    if (input->GetKeyState(KEY_INPUT_Z) == eInputState::Pressed ||
-        input->GetButtonState(XINPUT_BUTTON_A) == eInputState::Pressed)
-    {
-        if (mg_barPosition >= mg_targetMin && mg_barPosition <= mg_targetMax) {
-            if (se_success != -1) PlaySoundMem(se_success, DX_PLAYTYPE_BACK);
-            mg_lastResultSuccess = true;
-        }
-        else {
-            if (se_fail != -1) PlaySoundMem(se_fail, DX_PLAYTYPE_BACK);
-            remainingTime -= 10.0f;
-            mg_lastResultSuccess = false;
-        }
-        mg_resultTimer = 1.0f;
-    }
-}
-void InGameScene::DrawMiniGame() const {
-    int cx = (int)SCREEN_WIDTH / 2;
-    int cy = (int)SCREEN_HEIGHT / 2;
-    int w = 400;
-    int h = 60;
-    DrawBox(cx - w / 2 - 5, cy - h / 2 - 5, cx + w / 2 + 5, cy + h / 2 + 5, GetColor(255, 255, 255), FALSE);
-    DrawBox(cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2, GetColor(30, 30, 30), TRUE);
-    if (mg_resultTimer > 0.0f) {
-        if (mg_lastResultSuccess) {
-            DrawFormatString(cx - 60, cy - 10, GetColor(0, 255, 0), "GET EVIDENCE!");
-        }
-        else {
-            DrawFormatString(cx - 40, cy - 10, GetColor(255, 0, 0), "FAILED...");
-            DrawFormatString(cx - 50, cy + 20, GetColor(255, 100, 100), "-10 Seconds");
-        }
-        return;
-    }
-    if (mg_targetItem) {
-        DrawFormatString(cx - 100, cy - 60, GetColor(255, 255, 0), "TARGET: %s", mg_targetItem->GetName().c_str());
-    }
-    int z1 = cx - w / 2 + (int)(w * (mg_targetMin / 100.0f));
-    int z2 = cx - w / 2 + (int)(w * (mg_targetMax / 100.0f));
-    DrawBox(z1, cy - h / 2, z2, cy + h / 2, GetColor(0, 255, 0), TRUE);
-    int bx = cx - w / 2 + (int)(w * (mg_barPosition / 100.0f));
-    DrawBox(bx - 3, cy - h / 2 - 5, bx + 3, cy + h / 2 + 5, GetColor(255, 50, 50), TRUE);
-    DrawFormatString(cx - 80, cy + 40, GetColor(255, 255, 255), "Aボタンでタイミングよく止めろ！");
-}
-void InGameScene::DrawTimer() const {
-    int x = 20, y = 20;
-    int boxWidth = 300, boxHeight = 80;
-    DrawBox(x - 10, y - 10, x + boxWidth, y + boxHeight, GetColor(0, 0, 0), TRUE);
-    DrawBox(x - 10, y - 10, x + boxWidth, y + boxHeight, GetColor(100, 100, 100), FALSE);
-    int minutes = (int)(remainingTime / 60.0f);
-    int seconds = (int)(remainingTime) % 60;
-    unsigned int color;
-    if (remainingTime < 10.0f) {
-        color = GetColor(255, 0, 0);
-        if (((int)(remainingTime * 4)) % 2 == 0) color = GetColor(255, 255, 0);
-    }
-    else if (remainingTime < 30.0f) color = GetColor(255, 150, 0);
-    else color = GetColor(255, 255, 255);
-    SetFontSize(32);
-    DrawFormatString(x, y, color, "Time: %02d:%02d", minutes, seconds);
-    SetFontSize(16);
-    if (remainingTime <= 40.0f && remainingTime > 30.0f) DrawFormatString(x, y + 45, GetColor(200, 200, 200), "警察官：「まだ余裕か？」");
-    else if (remainingTime <= 30.0f && remainingTime > 20.0f) DrawFormatString(x, y + 45, GetColor(255, 150, 0), "警察官：「あと30秒だぞ！」");
-    else if (remainingTime <= 20.0f && remainingTime > 10.0f) DrawFormatString(x, y + 45, GetColor(255, 100, 0), "警察官：「急げ！20秒だ！」");
-    else if (remainingTime <= 10.0f) DrawFormatString(x, y + 45, GetColor(255, 0, 0), "警察官：「時間だ！答えろ！」");
-}
+
 void InGameScene::DrawPhaseInfo() const {
     DrawFormatString(20, 50, GetColor(200, 200, 200), "証拠発見数: %d / %d  容疑者: 質問済み %d/4",
         itemManager.GetCollectedCount(), itemManager.GetTotalCount(), CountQuestionedNPCs());
 }
+
 void InGameScene::DrawResult() const {
     int x = 200, y = 150;
     int boxWidth = 880, boxHeight = 420;
@@ -826,5 +618,5 @@ void InGameScene::DrawResult() const {
     }
 }
 
-
 void InGameScene::DrawOpening() const {}
+void InGameScene::DrawAreaInfo() const {}
