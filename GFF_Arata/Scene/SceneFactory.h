@@ -4,28 +4,29 @@
 #include "InGame/InGameScene.h"
 #include "Help/HelpScene.h"
 //#include "Result/ResultScene.h"
+#include <memory>
 
 class SceneFactory
 {
 public:
-	static SceneBase* CreateScene(eSceneType type)
+	static std::unique_ptr<SceneBase> CreateScene(eSceneType type)
 	{
 		switch (type)
 		{
 		case eSceneType::eTitle:
-			return dynamic_cast<SceneBase*>(new TitleScene());
+			return std::make_unique<TitleScene>();
 
 		case eSceneType::eInGame:
-			return dynamic_cast<SceneBase*>(new InGameScene());
+			return std::make_unique<InGameScene>();
 
 		case eSceneType::eHelp:
-			return dynamic_cast<SceneBase*>(new HelpScene());
+			return std::make_unique<HelpScene>();
 
 		/*case eSceneType::eResult:
 			return dynamic_cast<SceneBase*>(new ResultScene());*/
 
 		default:
-			return nullptr;
+			return {};
 
 		}
 	}

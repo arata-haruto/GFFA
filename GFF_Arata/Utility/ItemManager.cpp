@@ -3,22 +3,10 @@
 #include "InputManager.h"
 #include <algorithm>
 
-struct NamedItem {
-    Item* item;
-    std::string name;
-};
-
-ItemManager::~ItemManager() {
-    for (auto& item : items) {
-        delete item;
-    }
-    items.clear();
-}
-
-void ItemManager::Add(Item* item) {
+void ItemManager::Add(std::unique_ptr<Item> item) {
     if (item) {
         item->Init();
-        items.push_back(item);
+        items.push_back(std::move(item));
     }
 }
 
@@ -29,8 +17,8 @@ void ItemManager::Init() {
 }
 
 void ItemManager::Update(float playerX, float playerY, float deltaTime) {
-    for (size_t i = 0; i < items.size(); ++i) {
-        items[i]->Update(playerX, playerY, deltaTime);
+    for (const auto& item : items) {
+        item->Update(playerX, playerY, deltaTime);
     }
 
     if (isListOpen) {
@@ -62,7 +50,7 @@ void ItemManager::DrawPixelArtBox(int x, int y, int width, int height) const {
 }
 
 void ItemManager::Draw(float cameraOffsetX) const {
-    for (auto& item : items) {
+    for (const auto& item : items) {
         item->Draw(cameraOffsetX);
     }
 
@@ -111,7 +99,7 @@ void ItemManager::Draw(float cameraOffsetX) const {
         DrawBox(detailX, detailY, detailX + detailW, detailY + detailH, GetColor(150, 150, 150), FALSE);
 
         if (!items.empty()) {
-            const Item* selectedItem = items[selectedIndex];
+            const Item* selectedItem = items[selectedIndex].get();
             if (selectedItem->GetIsCollected()) {
                 SetFontSize(24);
                 DrawFormatString(detailX + 20, detailY + 20, GetColor(100, 255, 255), "%s", selectedItem->GetName().c_str());
@@ -149,7 +137,7 @@ void ItemManager::ToggleList() {
 
 const Item* ItemManager::GetSelectedItem() const {
     if (items.empty() || selectedIndex < 0 || selectedIndex >= (int)items.size()) return nullptr;
-    return items[selectedIndex];
+    return items[selectedIndex].get();
 }
 
 std::vector<std::string> ItemManager::GetCollectedItems() const {

@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "../Utility/InputManager.h"
+#include "../Utility/ResourceManager.h"
 #include "../Scene/InGame/MapData.h"
 
 Player::Player() {
@@ -18,8 +19,9 @@ Player::Player() {
 }
 
 void Player::Initialize() {
-	handle = LoadGraph("Resource/Characters/Player/player.png");
-	footSE = LoadSoundMem("Resource/Sound/foot.mp3");
+	ResourceManager* rm = ResourceManager::GetInstance();
+	handle = rm->GetImageResource("Resource/Characters/Player/player.png")[0];
+	footSE = rm->GetSoundResource("Resource/Sound/foot.mp3");
 	
 	// スプライトシートのサイズを取得（2x2グリッド）
 	if (handle != -1) {

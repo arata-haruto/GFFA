@@ -48,37 +48,36 @@ bool SceneManager::Update(float delta_second)
 
 void SceneManager::Finalize()
 {
-	if (current_scene != nullptr)
+	if (current_scene)
 	{
 		current_scene->Finalize();
-		delete current_scene;
-		current_scene = nullptr;
+		current_scene.reset();
 	}
 }
 
 bool SceneManager::ChangeScene(enum eSceneType type)
 {
 	//新しいシーンを作成する
-	SceneBase* next_scene = SceneFactory::CreateScene(type);
+	std::unique_ptr<SceneBase> next_scene = SceneFactory::CreateScene(type);
 
 	//エラーチェック
-	if (next_scene == nullptr)
+	if (!next_scene)
 	{
 		throw("シーン生成できませんでした\n");
 		return false;
 	}
 
 	//変更前シーンの終了処理
-	if (current_scene != nullptr)
+	if (current_scene)
 	{
 		current_scene->Finalize();
-		delete current_scene;
+		current_scene.reset();
 	}
 
 	//新しいシーンの初期化処理
 	next_scene->Initialize();
 	//シーンの上書き
-	current_scene = next_scene;
+	current_scene = std::move(next_scene);
 
 	return true;
 }

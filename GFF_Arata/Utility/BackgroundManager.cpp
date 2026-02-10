@@ -1,4 +1,5 @@
 #include "BackgroundManager.h"
+#include "ResourceManager.h"
 
 const float BackgroundManager::SCREEN_WIDTH = 1280.0f;
 const float BackgroundManager::SCREEN_HEIGHT = 720.0f;
@@ -18,14 +19,15 @@ BackgroundManager::~BackgroundManager()
 
 void BackgroundManager::Initialize()
 {
-    mainBackgroundImage = LoadGraph("Resource/Background/Shop_BG.png");
+    ResourceManager* rm = ResourceManager::GetInstance();
+    mainBackgroundImage = rm->GetImageResource("Resource/Background/Shop_BG.png")[0];
 
     if (mainBackgroundImage == -1) {
-        bgHandles[0] = LoadGraph("Resource/Background/BG.jpg");
-        bgHandles[1] = LoadGraph("Resource/Background/BG.jpg");
-        bgHandles[2] = LoadGraph("Resource/Background/BG.jpg");
-        bgHandles[3] = LoadGraph("Resource/Background/BG.jpg");
-        bgHandles[4] = LoadGraph("Resource/Background/BG.jpg");
+        bgHandles[0] = rm->GetImageResource("Resource/Background/BG.jpg")[0];
+        bgHandles[1] = rm->GetImageResource("Resource/Background/BG.jpg")[0];
+        bgHandles[2] = rm->GetImageResource("Resource/Background/BG.jpg")[0];
+        bgHandles[3] = rm->GetImageResource("Resource/Background/BG.jpg")[0];
+        bgHandles[4] = rm->GetImageResource("Resource/Background/BG.jpg")[0];
     }
 
     LoadBackgroundObjects();
@@ -33,12 +35,13 @@ void BackgroundManager::Initialize()
 
 void BackgroundManager::LoadBackgroundObjects()
 {
+    ResourceManager* rm = ResourceManager::GetInstance();
     backgroundObjects.clear();
     auto objects = MapData::GetBackgroundObjects();
     for (const auto& obj : objects) {
         int handle = -1;
         if (!obj.imagePath.empty()) {
-            handle = LoadGraph(obj.imagePath.c_str());
+            handle = rm->GetImageResource(obj.imagePath)[0];
         }
         backgroundObjects.push_back({ handle, obj.x, obj.y, obj.width, obj.height });
     }
@@ -46,22 +49,10 @@ void BackgroundManager::LoadBackgroundObjects()
 
 void BackgroundManager::Finalize()
 {
-    if (mainBackgroundImage >= 0) {
-        DeleteGraph(mainBackgroundImage);
-        mainBackgroundImage = -1;
-    }
+    mainBackgroundImage = -1;
 
     for (int i = 0; i < 5; i++) {
-        if (bgHandles[i] != -1) {
-            DeleteGraph(bgHandles[i]);
-            bgHandles[i] = -1;
-        }
-    }
-
-    for (auto& obj : backgroundObjects) {
-        if (obj.handle != -1) {
-            DeleteGraph(obj.handle);
-        }
+        bgHandles[i] = -1;
     }
     backgroundObjects.clear();
 }

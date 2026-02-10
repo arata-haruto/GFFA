@@ -1,4 +1,5 @@
 #include "Floor.h"
+#include "../Utility/ResourceManager.h"
 #include <cmath>
 
 Floor::Floor() {
@@ -10,7 +11,7 @@ Floor::Floor() {
 }
 
 void Floor::Initialize() {
-	handle = LoadGraph("Resource/Background/Floor.png");
+	handle = ResourceManager::GetInstance()->GetImageResource("Resource/Background/Floor.png")[0];
 }
 
 void Floor::Draw(float cameraOffsetX) {

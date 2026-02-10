@@ -12,7 +12,8 @@
 #include "../../Utility/GameTimer.h"
 #include "../../Utility/BackgroundManager.h"
 #include "MapData.h"
-#include <vector>
+#include <memory>
+#include <string>
 
 enum class GamePhase {
     Opening,
@@ -26,12 +27,11 @@ enum class GamePhase {
 
 class InGameScene : public SceneBase {
 private:
-    Player* player1;
+    std::unique_ptr<Player> player1;
     ItemManager itemManager;
     NPCManager npcManager;
-    DialogueSystem* dialogueSystem;
+    std::unique_ptr<DialogueSystem> dialogueSystem;
 
-    // 新しいマネージャークラス
     MiniGameManager miniGameManager;
     AreaTransitionManager areaTransitionManager;
     GameTimer gameTimer;
@@ -51,8 +51,8 @@ private:
     float evidenceResultTimer;
     std::string evidenceResultMessage;
 
-    ReasoningManager* reasoningManager;
-    ReasoningUI* reasoningUI;
+    std::unique_ptr<ReasoningManager> reasoningManager;
+    std::unique_ptr<ReasoningUI> reasoningUI;
 
     bool showResult;
     bool isCorrect;
@@ -78,6 +78,17 @@ public:
     eSceneType GetNowSceneType() const override;
 
 private:
+    eSceneType UpdateOpeningOrNpcDialogue(float delta_second);
+    eSceneType UpdateEvidenceCollection(float delta_second);
+    eSceneType UpdateMiniGame(float delta_second);
+    eSceneType UpdateReasoning(float delta_second);
+
+    void DrawOpeningOrNpcDialogue() const;
+    void DrawEvidenceCollection() const;
+    void DrawAreaTransition() const;
+    void DrawMiniGame() const;
+    void DrawReasoning() const;
+
     void LoadCharacterImages();
     void SetupOpeningDialogue();
     void SetupNPCDialogue(NPC* npc);
